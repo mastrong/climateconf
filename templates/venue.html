@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section id="venue" class="section about">
+  <div class="container">
+
+    <h2>Venue</h2>
+
+    <p class="desc venue-jump" style="text-align:center;">
+      <a href="#building" class="link" style="margin-right:1rem;">The Building</a>
+      <a href="#getting-here" class="link" style="margin-right:1rem;">How to Get Here</a>
+      <a href="#stay" class="link">Where to Stay</a>
+    </p>
+
+    <div class="venue-layout">
+
+      <div class="venue-text">
+        <p>
+          <i>Visualizing Climate</i> will take place in the <strong>Botte B4 Pavilion</strong> at the
+          <strong>DAMA Technopole</strong>, previously known as Manifattura Tabacchi, which also hosts the ECMWF data centre.
+        </p>
+
+        <p>
+          Originally designed and built in the 1950s by Pier Luigi Nervi, the pavilion is located in the northern area of Bologna.
+          Today, it is home to initiatives focused on big data, artificial intelligence, meteorology, climate research, and innovation.
+        </p>
+
+        <!-- INLINE ADDRESS + MAP BUTTON -->
+        <p style="display:flex; align-items:center; gap:.75rem; flex-wrap:wrap;">
+          <b>Via Stalingrado 84/3, 40128 Bologna BO</b>
+          <a class="btn btn-primary" style="padding:.45rem .75rem; font-weight:700;"
+             target="_blank"
+             href="https://maps.app.goo.gl/PoyHBHEemKc1s4s98">
+            Map
+          </a>
+        </p>
+
+      </div>
+
+      <img src="/static/images/venue.png"
+           alt="Botte B4 Pavilion, DAMA Technopole"
+           class="venue-photo">
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- BUILDING -->
+<section id="building" class="section">
+  <div class="container">
+    <h2>The Building</h2>
+            <p>
+          Originally designed and built in the 1950s by Pier Luigi Nervi, the pavilion is located in the northern area of Bologna.
+          Today, it is home to initiatives focused on big data, artificial intelligence, meteorology, climate research, and innovation.
+        </p>
+    <p class="desc">
+
+      The <strong>Botte B4 Pavilion</strong> is part of the <strong>DAMA Technopole</strong>, a redeveloped industrial area
+      formerly known as Manifattura Tabacchi. The pavilion incorporates sustainable architectural features and houses
+      the <strong>ECMWF data centre</strong>, one of Europe's leading meteorological computing facilities.
+    </p>
+  </div>
+</section>
+
+
+<!-- GETTING HERE -->
+<section id="getting-here" class="section">
+  <div class="container">
+    <h2>How to Get Here</h2>
+
+    <h3 style="margin-top:1rem;">By bicycle</h3>
+    <p class="desc">
+      Via Stalingrado includes a dedicated cycle lane (Cycle Route 7).
+    </p>
+
+    <h3 style="margin-top:1.5rem;">By public transport</h3>
+    <p class="desc"><strong>From Bologna city centre and Bologna Centrale (fast trains):</strong></p>
+
+    <ul>
+      <li>
+        <b>Bus line 25</b> to <b>Casoni</b> on Via Ferrarese.<br>
+        At the light, turn right onto Via Giovanni Casoni, then left onto Via Stalingrado.
+        Walk about 20 metres to the data centre entrance.<br>
+        <i><a href="#" target="_blank">Line 25 route and timetable</a></i>
+      </li>
+
+      <li>
+        <b>Bus line 68</b> directly to Via Stalingrado.<br>
+        Fewer stops in the city centre.<br>
+        <i><a href="#" target="_blank">Line 68 route and timetable</a></i>
+      </li>
+    </ul>
+
+    <p class="desc">
+      Tickets are available via vending machines onboard buses (“biglietto ordinario”)
+      or through the <strong>Roger</strong> and <strong>Muver</strong> mobile apps.
+    </p>
+
+    <h3 style="margin-top:1.5rem;">By car or taxi</h3>
+    <ul>
+      <li>From city centre: approx. 10–15 minutes (EUR 15–20).</li>
+      <li>From Bologna Airport: approx. 20 minutes (EUR 15–20).</li>
+    </ul>
+
+    <p class="desc">
+      Mention <strong>“ex Manifattura Tabacchi / Tecnopolo”</strong> to taxi drivers for clarity.
+      Credit cards are widely accepted.
+    </p>
+
+    <p class="desc"><strong>Parking is available on site.</strong></p>
+  </div>
+</section>
+
+
+<!-- WHERE TO STAY -->
+<section id="stay" class="section">
+  <div class="container">
+    <h2>Where to Stay in Bologna</h2>
+
+    <p class="desc">
+      For a full list of accommodation options, visit the
+      <a href="https://www.bolognawelcome.com/en/where-to-stay" target="_blank">
+        Bologna Welcome – Where to Stay
+      </a> page.
+    </p>
+
+    <p class="desc">
+      We strongly recommend booking early, as Bologna remains busy with trade fairs and cultural events through autumn.
+    </p>
+
+    <p class="desc">
+      While lodging is available near the data centre in northern Bologna, most visitors choose to stay in the city centre.
+    </p>
+
+    <ul>
+      <li><b>City Centre (recommended):</b> walkable, lively, excellent dining.</li>
+      <li><b>Near the Data Centre:</b> quiet and convenient for daily sessions.</li>
+      <li><b>Avoid:</b> Via Zamboni / Piazza Verdi (university zone) and the train-station/Montagnola area due to noise.</li>
+    </ul>
+  </div>
+</section>
+</div>
+{% endblock content %}

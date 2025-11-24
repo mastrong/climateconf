@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="section about">
+<h2>Submissions</h2>
+    <p class="desc">
+      We invite proposals that engage with data visualization as a driver of understanding, engagement, and meaningful action in the face of climate and environmental crises. Contributions may explore how complex information is transformed into compelling visual narratives that resonate with diverse audiences, including policymakers, researchers, and frontline communities.
+    </p>
+
+    <p class="desc">
+      Proposals may include tools, methods, or case studies that illustrate interdisciplinary collaboration, co-design, or the creation of scientific, journalistic, artistic, and creative visualizations.
+    </p>
+  <div class="container" style="text-align:center; margin-bottom:2rem;">
+    <div style="display:inline-flex; gap:1.5rem; align-items:center; font-weight:700;">
+
+      <label style="cursor:pointer;">
+        <input type="radio" name="cfToggle" value="oral" checked
+               style="margin-right:.4rem;">
+        Oral Contributions
+      </label>
+
+      <label style="cursor:pointer;">
+        <input type="radio" name="cfToggle" value="workshop"
+               style="margin-right:.4rem;">
+        Workshops
+      </label>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ORAL SECTION -->
+<section class="section" id="oralSection">
+  <div class="container">
+    <h2>Oral Contributions</h2>
+
+    <p class="kicker">Inviting proposals that explore how visual communication can drive understanding and action.</p>
+
+    <br>
+
+    <h3>Formats</h3>
+    <p class="desc">
+      Participants may submit proposals for talks. Talks are limited to 15 minutes including questions. Accepted submissions will be assigned to one of the conference sections (science, media, and art).
+    </p>
+
+    <h3>Submissions</h3>
+    <p class="desc">
+      Provide a title, abstract of up to 250 words, three keywords, and your contact information. You may select an oral presentation during submission.
+    </p>
+    <p class="desc">
+      Submit using <a href="#">this form</a>.
+    </p>
+
+    <h3>Logistic Considerations</h3>
+    <p class="desc">
+      Travel support will be considered for presenters with limited access to funding (early-career researchers, inclusiveness target countries, or least-developed countries). Apply for travel aid using <a href="#">this form</a>.
+    </p>
+    <p class="desc">
+      All participants are responsible for arranging their own travel and accommodation.
+    </p>
+
+    <p class="desc"><strong>Submission deadline:</strong> March 31, 2026</p>
+    <p class="desc"><strong>Notification of acceptance:</strong> May 31, 2026</p>
+  </div>
+</section>
+
+
+
+<!-- WORKSHOP SECTION -->
+<section class="section" id="workshopSection" style="display:none;">
+  <div class="container">
+    <h2>Workshops</h2>
+
+    <p class="kicker">Inviting interactive formats beyond talks.</p>
+
+    <h3>Formats</h3>
+    <p class="desc">
+      We welcome proposals for workshops, artistic interventions, hybrid formats, collective sessions, or other contributions that do not fit the oral/poster structure. Workshops typically last 90 minutes, but shorter formats may be considered.
+    </p>
+
+    <h3>Submissions</h3>
+    <p class="desc">
+      Provide a title, a 250-word description of purpose, a session flow/structure, potential panelists, and your contact information.
+    </p>
+    <p class="desc">
+      Submit your workshop proposal using <a href="#">this form</a>.
+    </p>
+
+    <h3>Logistic Considerations</h3>
+    <p class="desc">
+      Travel support may be available under the same criteria described above. Apply using <a href="#">this form</a>.
+    </p>
+    <p class="desc">
+      All participants are responsible for making their own travel and accommodation arrangements.
+    </p>
+
+    <p class="desc"><strong>Workshop submission deadline:</strong> March 31, 2026</p>
+    <p class="desc"><strong>Notification of acceptance:</strong> May 31, 2026</p>
+  </div>
+</section>
+
+
+<!-- INLINE TOGGLE SCRIPT -->
+<script>
+  document.querySelectorAll('input[name="cfToggle"]').forEach(r => {
+    r.addEventListener("change", () => {
+      const isOral = r.value === "oral";
+      document.getElementById("oralSection").style.display = isOral ? "block" : "none";
+      document.getElementById("workshopSection").style.display = isOral ? "none" : "block";
+    });
+  });
+</script>
+
+{% endblock content %}

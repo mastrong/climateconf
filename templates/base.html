@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Visualizing Climate 2026 — Conference</title>
+  <link rel="icon" type="image/png" href="{% static 'logos/vc_logo_static/logo_final@4x.png' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+{% if pw_script %}
+<script>
+  const correctPassword = "Reindeer87knobTeeth$";
+  const entered = sessionStorage.getItem("authorized");
+
+  if (!entered) {
+    const userPassword = prompt("Enter site password:");
+    if (userPassword !== correctPassword) {
+      alert("Incorrect password. Access denied.");
+      window.location.href = "https://www.google.com"; // or your main site
+    } else {
+      sessionStorage.setItem("authorized", "true");
+    }
+  }
+</script>
+{% endif %}
+
+<nav class="nav">
+  <div class="nav-inner">
+
+    <a class="brand" href="/">
+      <div id="vcLogoHeader" class="vc-logo"></div>
+      <span class="brand-title">Visualizing Climate 2026</span>
+    </a>
+    <div class="spacer"></div>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <button class="dropdown-toggle">About</button>
+        <div class="dropdown-menu">
+          <a href="/institutions">Participating Institutions</a>
+          <a style="color: gray">Program (coming soon)</a>
+        </div>
+      </div>
+{#      <a class="link" href="/register">Register</a>#}
+      <a class="link" href="/submissions">Submissions</a>
+      <a class="link" href="/venue">Venue</a>
+    </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+{% block content %}{% endblock %}
+
+<footer>
+  <section id="partners" class="section">
+    <div class="logo-wrapper">
+  <div class="logo-wide">
+    <a href="https://climate.copernicus.eu/">
+      <img src="{% static 'logos/Copernicus-ECMWF/logoline.svg' %}" alt="">
+    </a>
+  </div>
+
+  <div class="logo-row">
+    <a href="https://idsc.miami.edu/">
+      <img src="{% static 'logos/UM/UM-H-data-science-computing-RGB.png' %}" alt="">
+    </a>
+
+    <a href="https://openvisualizationacademy.org">
+      <img src="{% static 'logos/UM/ova_closeup.svg' %}" alt="">
+    </a>
+
+    <a href="https://www.bc3research.org/">
+      <img src="{% static 'logos/BC3/2.1 BC3 H Color.svg' %}" alt="">
+    </a>
+
+    <a href="https://www.bsc.es/es">
+      <img src="{% static 'logos/BSC/BSC-blue.svg' %}" alt="">
+    </a>
+
+    <a href="https://www.csic.es/es">
+      <img src="{% static 'logos/CSIC/1-CSIC-Logotipo--SVG-Vectorial--COLOR--CSIC.svg' %}" alt="">
+    </a>
+  </div>
+</div>
+
+  </section>
+  <div class="footer-inner">
+    <div class="copyright">
+      © 2026 Visualizing Climate
+    </div>
+  </div>
+</footer>
+
+<div id="bioModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="bioContent"></div>
+  </div>
+</div>
+
+<script src="{% static 'script.js' %}"></script>
+</body>
+</html>

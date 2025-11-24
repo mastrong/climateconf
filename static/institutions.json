@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Copernicus & ECMWF",
+    "logo": "/static/logos/Copernicus-ECMWF/logoline.svg",
+    "text": "Copernicus is the Earth observation component of the European Union’s Space programme, coordinated by the European Commission and implemented with European and national organisations. The European Centre for Medium-Range Weather Forecasts (ECMWF) is both a research institute and a 24/7 operational service, producing global numerical weather predictions and operating a world-class supercomputing facility. ECMWF implements key components of Copernicus, including the Copernicus Climate Change Service and the Copernicus Atmosphere Monitoring Service, and contributes to the Copernicus Emergency Management Service. Along with ESA and EUMETSAT, ECMWF also delivers Destination Earth, developing prototype digital twins of the Earth."
+  },
+  {
+    "name": "University of Miami – IDSC & School of Communication",
+    "logo": "/static/logos/UM/UM-H-data-science-computing-RGB.png",
+    "text": "As part of the University of Miami’s Frost Institutes of Science and Engineering, the Frost Institute for Data Science and Computing (IDSC) supports basic and applied research across the University and with leading institutions worldwide. IDSC builds partnerships with industry, government, and nonprofit organizations, fostering connections across South Florida, the Caribbean, Latin America, and beyond. The University of Miami School of Communication prepares students to become forward-thinking, analytical, and ethical communication professionals. Its programs integrate theory and practice, emphasizing creativity, collaboration, critical thinking, and freedom of expression, guiding future scholars, practitioners, and leaders toward a lifetime of informed engagement."
+  },
+  {
+    "name": "Barcelona Supercomputing Center (BSC)",
+    "logo": "/static/logos/BSC/BSC-blue.svg",
+    "text": "The Barcelona Supercomputing Center (BSC) is Spain’s national supercomputing facility and a leading research centre in high-performance computing. BSC supports scientific and engineering research across Europe, hosts the MareNostrum supercomputers, and advances innovation in climate modelling, computational science, and digital technologies."
+  },
+  {
+    "name": "Basque Centre for Climate Change (BC3)",
+    "logo": "/static/logos/BC3/2.1 BC3 H Color.svg",
+    "text": "The Basque Centre for Climate Change (BC3) is an internationally recognized research centre focused on climate change science, socioeconomic impacts, adaptation, mitigation, and sustainable development. BC3 integrates natural and social sciences to support climate policy, strengthen resilience, and advance evidence-based solutions."
+  },
+  {
+    "name": "CSIC – Spanish National Research Council",
+    "logo": "/static/logos/CSIC/1-CSIC-Logotipo--SVG-Vectorial--COLOR--CSIC.svg",
+    "text": "The Spanish National Research Council (CSIC) is Spain’s largest public research organization, conducting basic and applied research across all fields of knowledge. Its mission is to promote, coordinate, and disseminate multidisciplinary scientific and technological research that strengthens knowledge, supports economic and social development, trains researchers, and provides expert guidance to public and private institutions. With 121 institutes across Spain and major national research centres, CSIC addresses global challenges including ecological transition, resource management, public health, digitalization, social inclusion, and democratic quality, driving scientific excellence and innovation."
+  },
+  {
+    "name": "University of Twente Climate Centre",
+    "logo": "/static/logos/UTwente/UT Climate Centre Logo.png",
+    "text": "The UT Climate Centre at the University of Twente in the Netherlands supports research, education, and innovation toward a resilient, low-carbon society. The Centre fosters collaboration among staff, students, industry, and government, promoting transdisciplinary solutions to the climate crisis. Key areas of expertise include the energy transition, resilience to weather extremes, and the societal dimensions of climate-related transitions. More information: https://www.utwente.nl/en/climate-centre/"
+  },
+  {
+    "name": "InfoDesignLab",
+    "logo": "/static/logos/IDL/idl.svg",
+    "text": "InfoDesignLab is a socially conscious information design studio specializing in transforming complex data into clear visualizations, meaningful narratives, and compelling messages. For nearly two decades, the studio has worked with scientific organizations, universities, NGOs, and international institutions to make complex knowledge accessible. With a strong focus on climate science, sustainable development, health, education, and social justice, InfoDesignLab applies participatory design and evidence-based communication to support understanding, trust, and informed decision-making."
+  }
+]

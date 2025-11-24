@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Dr. Alberto Cairo",
+    "institution": "University of Miami",
+    "photo": "/static/images/alberto_cairo.png",
+    "bio": "Alberto Cairo is the Knight Chair in Infographics and Data Visualization at the University of Miami. He is a journalist, a designer, a consultant, and an author. He has led graphics departments in Spain, Brazil, and the United States, and has consulted for companies, educational institutions, international organisations, and governmental agencies in more than 30 countries. Cairo has written four best-selling books, The Functional Art (2012), The Truthful Art (2016), How Charts Lie (2019), and The Art of Insight (2023). His most recent project —also the most ambitious in his entire career— is the Open Visualization Academy (https://openvisualizationacademy.org/) a constantly growing library of free master classes, tutorials, and other educational materials about information design and visualization."
+  },
+  {
+    "name": "Dr. Anna Lombardi",
+    "institution": "ECMWF, Copernicus Climate Change Service",
+    "photo": "/static/images/LOMBARDI_Anna.jpg",
+    "bio": "Anna has an interdisciplinary background at the crossroads of physics, science communication and information design. She holds a PhD in experimental physics from the University of Lyon (France) and she has a three-year research experience as a postdoctoral research associate at the University of Cambridge (UK), where she worked across the domains of nano-optics, spectroscopy and plasmonics. After completing a Master in Science Communication at the International School for Advanced Studies in Trieste (Italy) in 2018, she joined the Times and Sunday Times in London where she worked as a senior data and graphics journalist for five years, specialising in visual journalism and finding stories in data. Since 2023 she is a climate data visualiser in the Copernicus Climate Change Service at ECMWF."
+  },
+  {
+    "name": "Dr. Dominic Royé",
+    "institution": "MBG-CSIC",
+    "photo": "/static/images/Roye_Dominic.jpg",
+    "bio": "Dominic has an interdisciplinary background at the intersection of climate science, data analysis, and societal impact. He holds a PhD in Physical Geography from the University of Santiago de Compostela (Spain), where he explored the links between atmospheric conditions and public health. Since 2025, he has been a Ramón y Cajal researcher at the Misión Biológica de Galicia, part of the Spanish National Research Council (CSIC) in Spain, focusing on climate data and its implications for ecosystems and society. Previously, he was Head of Data Science at the Climate Research Foundation (FIC) and a researcher at the University of Santiago de Compostela. His research interests include bioclimatology and spatial data science. He is an enthusiastic R user, with a strong curiosity for spatial analysis, data visualization, data management and manipulation, and GIS. Since 2019, he has been a member of the MCC Collaborative Research Network, an international research program investigating the associations between environmental stressors, climate, and health."
+  },
+  {
+    "name": "Diana Urquiza",
+    "institution": "Barcelona Supercomputing Center",
+    "photo": "/static/images/Diana_Urquiza.jpg",
+    "bio": "Diana is a product and service designer working at the intersection of climate, air quality and health. She leads the Product Design team in the Earth Sciences Department at the Barcelona Supercomputing Center, where she collaborates with the Earth System Services Group to create tools and services that help scientists, decision-makers and practitioners use climate and health information in their work. She has more than ten years of experience working with organisations such as UN Women, NASA, The Rockefeller Foundation, Google and Lever for Change, with a strong focus on social innovation and human-centred design. Her background is in visual communication and service design, with a BA in Visual Information Design, a Master’s in Design and Direction of Digital Products and Services (Elisava), and a Postgraduate degree in Innovation and Design Thinking (BAU). Her current interests include participatory design, advanced user experience research methods and the role of data visualization in promoting equity, safety and care in climate and health."
+  },
+  {
+    "name": "Dr. Marta Terrado",
+    "institution": "Barcelona Supercomputing Center",
+    "photo": "/static/images/marta_terrado.jpg",
+    "bio": "Marta is an environmental scientist with a strong passion for communication. She holds a PhD in Earth Sciences from the University of Barcelona, a Master's in Geographical Information Systems, and a Postgraduate Diploma in Science Communication. She has worked in different research environments, including the Spanish National Research Council and the Catalan Institute for Water Research. Currently, she is a senior researcher in the Earth Sciences Department at the Barcelona Supercomputing Center, where she co-leads the Knowledge Integration Team, working at the intersection of science and society. Her research interests include human-environment relationships with a particular focus on climate change, environmental issues and societal implications. Lately, she’s been exploring creative and innovative communication formats to strengthen scientific literacy and inspire critical thinking."
+  },
+  {
+    "name": "Angela Morelli",
+    "institution": "InfoDesignLab",
+    "photo": "/static/images/Angela_Morelli.png",
+    "bio": "Angela Morelli is an award-winning Italian information designer based in Norway. She is the CEO and co-founder of InfoDesignLab. From climate change to health, she has worked with a wide range of scientific organisations and professionals including the Intergovernmental Panel on Climate Change (IPCC), the European Environment Agency, the Norwegian Institute of Public Health, the Center for Climate Research in Norway and the World Meteorological Organization. Her goal is to co-design engaging solutions that empower audiences and support informed decision-making. Angela gained her MA in Information Design from Central Saint Martins in London, having previously obtained a BA degree in Engineering from Politecnico di Milano and an MA in Industrial Design. She is an acclaimed international speaker and has regularly taught at the Oslo School of Architecture and Design, at the Oslo MET University, BI Norwegian Business School and at Central Saint Martins University in London. She has been jury member of the International Institute of Information Design Award and was awarded the Il Monito del Giardino Award in 2013 along with philanthropist Paul Polak, primatologist Jane Goodall, water scientist Tony Allan and other individuals committed to defending planetary ecosystems. Angela was named a 2012 Young Global Leader by the World Economic Forum thanks to her commitment in communicating the science of Water Footprint through information design and data visualisation."
+  },
+  {
+    "name": "Dr. Maria Loroño",
+    "institution": "Basque Centre for Climate Change",
+    "photo": "/static/images/Maria_Lorono.jpg",
+    "bio": "Maria is a Postdoctoral Researcher at BC3, as part of the European Research Council project IMAGINE Adaptation. She is interested in designing environmentally sustainable and socially just cities, as well as citizen participation. Her research interests include the art/science interface as well as creative research methodologies. She has a background in communication and cognition and she has a PhD in Public Engagement with Climate Change (Manchester Metropolitan University, 2019). She is the author of the book Data Visualisation in Qualitative Research: A step-by-step guide (SAGE, 2025)."
+  },
+  {
+    "name": "Tom Gabriel Johansen",
+    "institution": "InfoDesignLab",
+    "photo": "/static/images/Tom_Gabriel_Johansen.png",
+    "bio": "Tom Gabriel Johansen is an experienced design leader - passionate about diversity, true impact, efficiency, people, science, climate, health and sustainability. C-suite design leader with strong international experience. He is the co-founder of InfoDesignLab. He has over 20 years of experience in design, ranging from strategic design to board games, interaction design and data visualization. He has worked with a wide range of scientific organisations and professionals including the Intergovernmental Panel on Climate Change (IPCC), the European Environment Agency, the Norwegian Institute of Public Health, the Center for Climate Research in Norway and the World Meteorological Organization. He has worked as a special advisor for Statistics Norway and as a member of Eurostat’s Visualization Task Force. Tom worked at the Norwegian Broadcasting Corporation (NRK), embedding design and information visualization into the news-floor operation. While at NRK, Tom’s work received international recognition, including the World Media Award. He is an advocate for the value of cross-collaboration among different professions and enjoys working closely with journalists, researchers, scientists and activists. He is an acclaimed international speaker and has regularly taught at the Oslo School of Architecture and Design, at the Norwegian Institute of Journalism, at the Oslo MET University, BI Norwegian Business School and at Central Saint Martins University in London."
+  },
+  {
+    "name": "Dr. Yuri Engelhardt",
+    "institution": "University of Twente",
+    "photo": "/static/images/Yuri_Engelhardt.jpg",
+    "bio": "Yuri is Assistant Professor of Information Visualization and Transdisciplinary Climate Action. He wrote ‘The Language of Graphics’ (2002), and has contributed to various other books and academic publications, including the book ‘Elements of Diagramming’ (expected in 2026, edited by Clive Richards). After 20 years at the University of Amsterdam, where he co-founded the annual interfaculty ‘Show me the Data’ course and symposium, Yuri moved to the University of Twente (also in the Netherlands). After 10 years in the research group for Cartography and Visualization in Twente, he currently works at the university's Climate Centre. Yuri enjoys exploring the many different ‘languages of visualization’ and their ‘building blocks’. He is passionate about visual communication that is related to sustainability, biodiversity, and health, and he loves bringing people together across disciplines to take action regarding the climate emergency."
+  }
+]
