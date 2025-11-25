@@ -3,8 +3,7 @@ import os
 
 
 def index(request):
-    pw_script = os.getenv("PW_SCRIPT", "")
-    return render(request, 'index.html', context={'pw_script': pw_script})
+    return render(request, "index.html")
 
 def institutions(request):
     return render(request, 'institutions.html')

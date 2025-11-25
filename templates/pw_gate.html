@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Protected</title>
+</head>
+<body>
+
+<h2>Enter Password</h2>
+
+{% if error %}
+<p style="color:red;">Incorrect password.</p>
+{% endif %}
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="password" name="pw" placeholder="Password">
+    <button type="submit">Enter</button>
+</form>
+
+<script>
+    // auto-login from localStorage
+    const saved = localStorage.getItem("site_authed");
+    if (saved === "true") {
+        // auto-submit hidden form to mark session as authed
+        const f = document.createElement("form");
+        f.method = "POST";
+        f.style.display = "none";
+
+        const csrf = "{{ csrf_token }}";  // Django injects this
+        f.innerHTML = `
+            <input type="hidden" name="pw" value="${saved}">
+            <input type="hidden" name="csrfmiddlewaretoken" value="${csrf}">
+        `;
+        document.body.appendChild(f);
+        f.submit();
+    }
+</script>
+
+</body>
+</html>

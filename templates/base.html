@@ -11,23 +11,6 @@
 </head>
 <body>
 
-{% if pw_script %}
-<script>
-  const correctPassword = "Reindeer87knobTeeth$";
-  const entered = sessionStorage.getItem("authorized");
-
-  if (!entered) {
-    const userPassword = prompt("Enter site password:");
-    if (userPassword !== correctPassword) {
-      alert("Incorrect password. Access denied.");
-      window.location.href = "https://www.google.com"; // or your main site
-    } else {
-      sessionStorage.setItem("authorized", "true");
-    }
-  }
-</script>
-{% endif %}
-
 <nav class="nav">
   <div class="nav-inner">
 

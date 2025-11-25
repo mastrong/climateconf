@@ -17,8 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from climaviz import views
-
+from core.views import pw_gate
 urlpatterns = [
+    path("pw/", pw_gate, name="pw_gate"),
     path('', views.index, name='index'),
     path('institutions/', views.institutions, name='about'),
     # path('collaborators/', views.collaborators, name='collaborators'),
