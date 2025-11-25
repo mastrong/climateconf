@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 import os
+from django.views.decorators.csrf import csrf_exempt
 
+@csrf_exempt
 def pw_gate(request):
     real_pw = os.getenv("DJANGO_SITE_PASSWORD", "")
     error = False
