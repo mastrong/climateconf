@@ -3,6 +3,9 @@
 
 {% block content %}
 
+<!-- =========================
+     VENUE TOP SECTION
+========================= -->
 <section id="venue" class="section about">
   <div class="container">
 
@@ -11,11 +14,12 @@
     <p class="desc venue-jump" style="text-align:center;">
       <a href="#building" class="link" style="margin-right:1rem;">The Building</a>
       <a href="#getting-here" class="link" style="margin-right:1rem;">How to Get Here</a>
-      <a href="#stay" class="link">Where to Stay</a>
+      <a href="#stay" class="link" style="margin-right:1rem;">Where to Stay</a>
     </p>
 
     <div class="venue-layout">
 
+      <!-- LEFT: TEXT -->
       <div class="venue-text">
         <p>
           <i>Visualizing Climate</i> will take place in the <strong>Botte B4 Pavilion</strong> at the
@@ -27,96 +31,163 @@
           Today, it is home to initiatives focused on big data, artificial intelligence, meteorology, climate research, and innovation.
         </p>
 
-        <!-- INLINE ADDRESS + MAP BUTTON -->
-        <p style="display:flex; align-items:center; gap:.75rem; flex-wrap:wrap;">
-          <b>Via Stalingrado 84/3, 40128 Bologna BO</b>
-          <a class="btn btn-primary" style="padding:.45rem .75rem; font-weight:700;"
-             target="_blank"
-             href="https://maps.app.goo.gl/PoyHBHEemKc1s4s98">
-            Map
-          </a>
-        </p>
+        <!-- Address + Map Button -->
+      <p>
+        <a href="https://maps.app.goo.gl/PoyHBHEemKc1s4s98"
+           target="_blank"
+           style="font-weight:700; color:#fff; text-decoration:underline;">
+          Via Stalingrado 84/3, 40128 Bologna BO
+        </a>
+      </p>
 
       </div>
 
-      <img src="/static/images/venue.png"
-           alt="Botte B4 Pavilion, DAMA Technopole"
+      <!-- RIGHT: NEW IMAGE -->
+      <img src="{% static 'images/dama_tech.jpeg' %}"
+           alt="DAMA Technopole campus overview"
            class="venue-photo">
-    </div>
 
+    </div>
   </div>
 </section>
 
 
 
-<!-- BUILDING -->
+<!-- =========================
+     THE BUILDING
+========================= -->
 <section id="building" class="section">
   <div class="container">
     <h2>The Building</h2>
-            <p>
+
+    <div class="building-layout">
+
+      <!-- LEFT COLUMN: OLD VENUE IMAGE -->
+      <div class="building-photo">
+        <img src="{% static 'images/venue.png' %}"
+             alt="Botte B4 Pavilion exterior"
+             style="width:100%; border-radius:16px; box-shadow:var(--soft-shadow);">
+      </div>
+
+      <!-- RIGHT COLUMN: TEXT -->
+      <div class="building-text">
+        <p>
           Originally designed and built in the 1950s by Pier Luigi Nervi, the pavilion is located in the northern area of Bologna.
           Today, it is home to initiatives focused on big data, artificial intelligence, meteorology, climate research, and innovation.
         </p>
-    <p class="desc">
 
-      The <strong>Botte B4 Pavilion</strong> is part of the <strong>DAMA Technopole</strong>, a redeveloped industrial area
-      formerly known as Manifattura Tabacchi. The pavilion incorporates sustainable architectural features and houses
-      the <strong>ECMWF data centre</strong>, one of Europe's leading meteorological computing facilities.
-    </p>
+        <p class="desc">
+          The <strong>Botte B4 Pavilion</strong> is part of the <strong>DAMA Technopole</strong>, a redeveloped industrial area
+          formerly known as Manifattura Tabacchi. The pavilion incorporates sustainable architectural features and houses
+          the <strong>ECMWF data centre</strong>, one of Europe's leading meteorological computing facilities.
+        </p>
+      </div>
+
+    </div>
   </div>
 </section>
 
 
-<!-- GETTING HERE -->
+
+<!-- =========================
+     HOW TO GET HERE
+========================= -->
 <section id="getting-here" class="section">
   <div class="container">
     <h2>How to Get Here</h2>
 
-    <h3 style="margin-top:1rem;">By bicycle</h3>
-    <p class="desc">
-      Via Stalingrado includes a dedicated cycle lane (Cycle Route 7).
-    </p>
+    <!-- MAP -->
+    <div class="gh-map" style="margin-bottom:2rem;">
+      <img src="{% static 'images/bologna_map.png' %}"
+           alt="Map of Bologna showing location of the DAMA Technopole"
+           style="width:100%; border-radius:16px; box-shadow:var(--soft-shadow);">
+    </div>
 
-    <h3 style="margin-top:1.5rem;">By public transport</h3>
-    <p class="desc"><strong>From Bologna city centre and Bologna Centrale (fast trains):</strong></p>
+    <!-- TABS -->
+    <div class="tabs how-tabs">
+      <button class="tab-button venue-tab active" data-tab="tab-bicycle">By Bicycle</button>
+      <button class="tab-button venue-tab" data-tab="tab-public">Public Transport</button>
+      <button class="tab-button venue-tab" data-tab="tab-car">Car / Taxi</button>
+    </div>
 
-    <ul>
-      <li>
-        <b>Bus line 25</b> to <b>Casoni</b> on Via Ferrarese.<br>
-        At the light, turn right onto Via Giovanni Casoni, then left onto Via Stalingrado.
+    <!-- TAB CONTENT: BICYCLE -->
+    <div id="tab-bicycle" class="tab-content venue-tab-content active">
+      <p>
+        🚲 <b>Cycle Route 7</b> — dedicated cycle lane along Via Stalingrado.
+      </p>
+      <p>
+        <a href="https://en.eurovelo.com/ev7/italy"
+           target="_blank" rel="noopener">
+          View map & route details
+        </a>
+      </p>
+
+    </div>
+
+
+    <!-- TAB CONTENT: PUBLIC TRANSPORT -->
+    <div id="tab-public" class="tab-content venue-tab-content">
+
+      <p class="desc"><strong>From Bologna city centre and Bologna Centrale (fast trains):</strong></p>
+
+      <p>
+        🚌 <b>Bus line 25</b> to <b>Casoni</b> on Via Ferrarese.<br>
+        Turn right onto Via Giovanni Casoni, then left onto Via Stalingrado.
         Walk about 20 metres to the data centre entrance.<br>
-        <i><a href="#" target="_blank">Line 25 route and timetable</a></i>
-      </li>
+        <i>
+          <a href="https://moovitapp.com/index/it/mezzi_pubblici-line-25-Bologna_e_Romagna-1783-854770-645106-3"
+             target="_blank" rel="noopener">
+            Line 25 route & timetable
+          </a>
+        </i>
+      </p>
 
-      <li>
-        <b>Bus line 68</b> directly to Via Stalingrado.<br>
+      <p>
+        🚌 <b>Bus line 68</b> directly to Via Stalingrado.<br>
         Fewer stops in the city centre.<br>
-        <i><a href="#" target="_blank">Line 68 route and timetable</a></i>
-      </li>
-    </ul>
+        <i>
+          <a href="https://moovitapp.com/index/en/public_transit-line-68-Bologna_e_Romagna-1783-854770-300075-1"
+             target="_blank" rel="noopener">
+            Line 68 route & timetable
+          </a>
+        </i>
+      </p>
+      <br>
+      <p class="desc">
+        Tickets are available via vending machines onboard buses (“biglietto ordinario”)
+        or through the <strong>Roger</strong> and <strong>Muver</strong> mobile apps.
+      </p>
 
-    <p class="desc">
-      Tickets are available via vending machines onboard buses (“biglietto ordinario”)
-      or through the <strong>Roger</strong> and <strong>Muver</strong> mobile apps.
-    </p>
+    </div>
 
-    <h3 style="margin-top:1.5rem;">By car or taxi</h3>
-    <ul>
-      <li>From city centre: approx. 10–15 minutes (EUR 15–20).</li>
-      <li>From Bologna Airport: approx. 20 minutes (EUR 15–20).</li>
-    </ul>
 
-    <p class="desc">
-      Mention <strong>“ex Manifattura Tabacchi / Tecnopolo”</strong> to taxi drivers for clarity.
-      Credit cards are widely accepted.
-    </p>
+    <!-- TAB CONTENT: CAR / TAXI -->
+    <div id="tab-car" class="tab-content venue-tab-content">
 
-    <p class="desc"><strong>Parking is available on site.</strong></p>
+      <p>
+        🚗 <b>From city centre:</b> approx. 10–15 minutes (EUR 15–20).
+      </p>
+
+      <p>
+        🚕 <b>From Bologna Airport:</b> approx. 20 minutes (EUR 15–20).
+      </p>
+
+      <p>
+        <b>Taxi tip:</b> Mention <strong>“ex Manifattura Tabacchi / Tecnopolo”</strong> to drivers for clarity.<br>
+        💳 Credit cards are widely accepted.
+      </p>
+
+      <p><strong>Parking is available on site.</strong></p>
+
+    </div>
+
+
   </div>
 </section>
 
-
-<!-- WHERE TO STAY -->
+<!-- =========================
+     WHERE TO STAY
+========================= -->
 <section id="stay" class="section">
   <div class="container">
     <h2>Where to Stay in Bologna</h2>
@@ -141,7 +212,8 @@
       <li><b>Near the Data Centre:</b> quiet and convenient for daily sessions.</li>
       <li><b>Avoid:</b> Via Zamboni / Piazza Verdi (university zone) and the train-station/Montagnola area due to noise.</li>
     </ul>
+
   </div>
 </section>
-</div>
+
 {% endblock content %}

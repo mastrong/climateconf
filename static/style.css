@@ -193,6 +193,7 @@ a {
   font-size: 1.125rem;
   color: var(--muted);
   max-width: 60ch;
+  text-align: center;
 }
 
 .hero-logo {
@@ -531,34 +532,50 @@ footer {
 /* Parent wrapper: two stacked rows */
 .logo-wrapper {
   display: grid;
-  row-gap: 1.5rem;
+  /*row-gap: 1.5rem;*/
   margin-top: 1.5rem;
+  justify-items: center;  /* centers both rows */
+  padding: 0 1rem;        /* prevents overflow on mobile */
 }
 
 /* Row 1: the wide logo centered */
 .logo-wide {
   display: flex;
   justify-content: center;
+  width: 100%;
+  min-width: 0;
 }
-
+.logo-wide a {
+  display: inline-flex;        /* shrink-wrap anchor */
+  width: max-content;          /* do NOT stretch */
+  max-width: 100%;             /* responsive */
+  min-width: 0;
+}
 .logo-wide img {
-  height: 80px; /* adjust if needed */
-  max-width: 100%;
+  height: 60px;
+  width: auto;
+  min-width: 0;
+  max-width: 100%;             /* allows scaling on small screens */
   object-fit: contain;
+  opacity: .85;
+  transition: opacity .2s ease, filter .2s ease;
 }
-
 /* Row 2: exactly 5 logos in one row */
 .logo-row {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1.5rem;
+  width: 100%;
+  min-width: 0;
   justify-items: center;
 }
 
 .logo-row img {
-  height: 60px;
-  max-width: 100%;
-  object-fit: contain;
+  min-width: 0;
+  width: 100%;          /* allow shrink */
+  max-width: 100%;      /* prevents images from forcing the grid wider */
+  height: auto;
+  object-fit: contain;    /* optional to control vertical size */
   opacity: .85;
   transition: opacity .2s ease, filter .2s ease;
 }
@@ -572,6 +589,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 0;
 }
 
 /* PROGRAM TABS */
@@ -658,14 +676,16 @@ footer {
   border-radius: .5rem;
   font-weight: 700;
   letter-spacing: .02em;
-  color: #3D7AB8; /* your chosen SVG blue */
+  color: #fff;                       /* high contrast */
+  background: rgba(255,255,255,0.12);/* faint pill so it looks clickable */
   transition: background .2s ease, color .2s ease;
 }
 
 .venue-jump a:hover {
-  background: color-mix(in oklab, var(--panel) 60%, #fff);
-  color: #214D8F; /* darker blue */
+  background: rgba(255,255,255,0.25);/* stronger hover signal */
+  color: #fff;
 }
+
 
 @media (max-width: 800px) {
   .venue-layout {
@@ -910,4 +930,154 @@ a:hover {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#key-topics {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .logo-row img {
+    max-height: 40px;
+  }
+}
+@media (max-width: 600px) {
+  #partners.section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.col-block {
+  background: #fff;
+  border: 1px solid color-mix(in oklab, var(--crimson-darkest) 10%, #fff);
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--soft-shadow);
+}
+
+@media (min-width: 850px) {
+  .two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.getting-here-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.gh-map img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: var(--soft-shadow);
+}
+
+@media (max-width: 800px) {
+  .getting-here-layout {
+    grid-template-columns: 1fr;
+  }
+}
+.building-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.building-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: var(--soft-shadow);
+}
+
+@media (max-width: 800px) {
+  .building-layout {
+    grid-template-columns: 1fr;
+  }
+}
+/* Vertically center text next to images on desktop */
+.venue-layout,
+.building-layout,
+.getting-here-layout {
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  /* Mobile should stack and not vertically center */
+  .venue-layout,
+  .building-layout,
+  .getting-here-layout {
+    align-items: start;
+  }
+}
+.institution-multi-logos .institution-logo {
+  height: 110px;      /* match original */
+  width: auto;        /* let width scale naturally */
+  flex: 0 0 auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer-contact {
+  text-align: center;
+  margin-bottom: .75rem;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.footer-contact a {
+  color: var(--crimson-dark);
+  font-weight: 700;
+}
+
+.footer-contact a:hover {
+  color: var(--crimson);
+}
+/* Fix venue jump buttons on mobile */
+@media (max-width: 600px) {
+  .venue-jump {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .venue-jump a {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    white-space: nowrap;
+    padding: .5rem 1rem;
+    border-radius: .75rem;
+  }
+}
+/* Slight spacing tuning for venue tabs */
+.how-tabs {
+  margin-bottom: 1rem;
+}
+/* Fix weird indentation after lists inside tabs */
+.tab-content p {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.hero > div:first-child {
+  text-align: center;
+  justify-self: center;
+}
+.hero > div:first-child .cta-row {
+  justify-content: center;
 }

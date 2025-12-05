@@ -38,46 +38,55 @@
 </nav>
 
 {% block content %}{% endblock %}
-
-<footer>
-  <section id="partners" class="section">
+<section id="partners" class="section">
+    <div class="container">
     <div class="logo-wrapper">
   <div class="logo-wide">
     <a href="https://climate.copernicus.eu/">
-      <img src="{% static 'logos/Copernicus-ECMWF/logoline.svg' %}" alt="">
+      <img src="{% static 'logos/Copernicus-ECMWF/logoline.svg' %}" alt="Copernicus-ECMWF logo">
     </a>
   </div>
 
   <div class="logo-row">
-    <a href="https://idsc.miami.edu/">
-      <img src="{% static 'logos/UM/UM-H-data-science-computing-RGB.png' %}" alt="">
+    <a href="https://welcome.miami.edu/">
+      <img src="{% static 'logos/UM/um-horizontal-pms.svg' %}" alt="UM logo">
     </a>
 
     <a href="https://openvisualizationacademy.org">
-      <img src="{% static 'logos/UM/ova_closeup.svg' %}" alt="">
+      <img src="{% static 'logos/UM/ova_closeup.svg' %}" alt="OVA logo">
     </a>
 
     <a href="https://www.bc3research.org/">
-      <img src="{% static 'logos/BC3/2.1 BC3 H Color.svg' %}" alt="">
+      <img src="{% static 'logos/BC3/2.1 BC3 H Color.svg' %}" alt="BC3 logo">
     </a>
 
     <a href="https://www.bsc.es/es">
-      <img src="{% static 'logos/BSC/BSC-blue.svg' %}" alt="">
+      <img src="{% static 'logos/BSC/BSC-blue.svg' %}" alt="BSC logo">
     </a>
 
     <a href="https://www.csic.es/es">
-      <img src="{% static 'logos/CSIC/1-CSIC-Logotipo--SVG-Vectorial--COLOR--CSIC.svg' %}" alt="">
+      <img src="{% static 'logos/CSIC/1-CSIC-Logotipo--SVG-Vectorial--COLOR--CSIC.svg' %}" alt="CSIC logo">
     </a>
   </div>
 </div>
-
+    </div>
   </section>
+
+<footer>
   <div class="footer-inner">
+
+    <div class="footer-contact">
+      <strong>Contact us</strong><br>
+      <a href="mailto:hello@visualisingclimate.com">hello@visualisingclimate.com</a>
+    </div>
+
     <div class="copyright">
       © 2026 Visualizing Climate
     </div>
+
   </div>
 </footer>
+
 
 <div id="bioModal" class="modal">
   <div class="modal-content">

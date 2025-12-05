@@ -141,7 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadInstitutions().then(() => {
     renderInstitutions();
-    initInstitutionModal();
   });
 
   initNavbar();
@@ -183,8 +182,21 @@ function renderInstitutions() {
     const el = document.createElement("div");
     el.className = "institution-full";
 
+    // Ensure logos is always an array
+    const logos = Array.isArray(inst.logos) ? inst.logos : [];
+
+    const logosHTML = `
+      <div class="institution-multi-logos">
+        ${logos.map(l => `
+          <a href="${l.href || '#'}" target="_blank" rel="noopener noreferrer">
+            <div class="institution-logo" style="background-image:url('${l.src}')"></div>
+          </a>
+        `).join("")}
+      </div>
+    `;
+
     el.innerHTML = `
-      <div class="institution-logo" style="background-image:url('${inst.logo}')"></div>
+      ${logosHTML}
       <h3>${inst.name}</h3>
       <p>${inst.text}</p>
     `;
@@ -192,4 +204,6 @@ function renderInstitutions() {
     container.appendChild(el);
   });
 }
+
+
 
