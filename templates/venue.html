@@ -75,7 +75,7 @@
           Originally designed and built in the 1950s by Pier Luigi Nervi, the pavilion is located in the northern area of Bologna.
           Today, it is home to initiatives focused on big data, artificial intelligence, meteorology, climate research, and innovation.
         </p>
-
+        <br>
         <p class="desc">
           The <strong>Botte B4 Pavilion</strong> is part of the <strong>DAMA Technopole</strong>, a redeveloped industrial area
           formerly known as Manifattura Tabacchi. The pavilion incorporates sustainable architectural features and houses
@@ -94,96 +94,72 @@
 ========================= -->
 <section id="getting-here" class="section">
   <div class="container">
+
     <h2>How to Get Here</h2>
 
-    <!-- MAP -->
-    <div class="gh-map" style="margin-bottom:2rem;">
-      <img src="{% static 'images/bologna_map.png' %}"
-           alt="Map of Bologna showing location of the DAMA Technopole"
-           style="width:100%; border-radius:16px; box-shadow:var(--soft-shadow);">
-    </div>
+    <div class="getting-here-layout">
 
-    <!-- TABS -->
-    <div class="tabs how-tabs">
-      <button class="tab-button venue-tab active" data-tab="tab-bicycle">By Bicycle</button>
-      <button class="tab-button venue-tab" data-tab="tab-public">Public Transport</button>
-      <button class="tab-button venue-tab" data-tab="tab-car">Car / Taxi</button>
-    </div>
+      <!-- LEFT COLUMN -->
+      <div>
+        <div class="tabs how-tabs">
+          <button class="tab-button venue-tab" data-tab="tab-bicycle">By Bicycle</button>
+          <button class="tab-button venue-tab active" data-tab="tab-public">Public Transport</button>
+          <button class="tab-button venue-tab" data-tab="tab-car">Car / Taxi</button>
+        </div>
+        <div id="tab-public" class="tab-content venue-tab-content active">
+          <p class="desc"><strong>From Bologna city centre and Bologna Centrale:</strong></p>
 
-    <!-- TAB CONTENT: BICYCLE -->
-    <div id="tab-bicycle" class="tab-content venue-tab-content active">
-      <p>
-        🚲 <b>Cycle Route 7</b> — dedicated cycle lane along Via Stalingrado.
-      </p>
-      <p>
-        <a href="https://en.eurovelo.com/ev7/italy"
-           target="_blank" rel="noopener">
-          View map & route details
-        </a>
-      </p>
+          <p>
+            🚌 <b>Bus line 25</b> to <b>Casoni</b> on Via Ferrarese.<br>
+            <i>
+              <a href="https://moovitapp.com/index/it/mezzi_pubblici-line-25-Bologna_e_Romagna-1783-854770-645106-3"
+                 target="_blank" rel="noopener">
+                Line 25 route & timetable
+              </a>
+            </i>
+          </p>
 
-    </div>
+          <p>
+            🚌 <b>Bus line 68</b> directly to Via Stalingrado.<br>
+            <i>
+              <a href="https://moovitapp.com/index/en/public_transit-line-68-Bologna_e_Romagna-1783-854770-300075-1"
+                 target="_blank" rel="noopener">
+                Line 68 route & timetable
+              </a>
+            </i>
+          </p>
+
+          <p class="desc">Tickets available onboard or via Roger and Muver apps.</p>
+        </div>
+        <div id="tab-bicycle" class="tab-content venue-tab-content">
+          <p>🚲 <b>Cycle Route 7</b> — dedicated cycle lane along Via Stalingrado.</p>
+          <p>
+            <a href="https://en.eurovelo.com/ev7/italy" target="_blank" rel="noopener">
+              View map & route details
+            </a>
+          </p>
+        </div>
 
 
-    <!-- TAB CONTENT: PUBLIC TRANSPORT -->
-    <div id="tab-public" class="tab-content venue-tab-content">
+        <div id="tab-car" class="tab-content venue-tab-content">
+          <p>🚗 <b>From city centre:</b> 10–15 minutes.</p>
+          <p>🚕 <b>From Bologna Airport:</b> 20 minutes.</p>
+          <p><b>Parking is available on site.</b></p>
+        </div>
+      </div>
 
-      <p class="desc"><strong>From Bologna city centre and Bologna Centrale (fast trains):</strong></p>
-
-      <p>
-        🚌 <b>Bus line 25</b> to <b>Casoni</b> on Via Ferrarese.<br>
-        Turn right onto Via Giovanni Casoni, then left onto Via Stalingrado.
-        Walk about 20 metres to the data centre entrance.<br>
-        <i>
-          <a href="https://moovitapp.com/index/it/mezzi_pubblici-line-25-Bologna_e_Romagna-1783-854770-645106-3"
-             target="_blank" rel="noopener">
-            Line 25 route & timetable
-          </a>
-        </i>
-      </p>
-
-      <p>
-        🚌 <b>Bus line 68</b> directly to Via Stalingrado.<br>
-        Fewer stops in the city centre.<br>
-        <i>
-          <a href="https://moovitapp.com/index/en/public_transit-line-68-Bologna_e_Romagna-1783-854770-300075-1"
-             target="_blank" rel="noopener">
-            Line 68 route & timetable
-          </a>
-        </i>
-      </p>
-      <br>
-      <p class="desc">
-        Tickets are available via vending machines onboard buses (“biglietto ordinario”)
-        or through the <strong>Roger</strong> and <strong>Muver</strong> mobile apps.
-      </p>
+      <!-- RIGHT COLUMN -->
+      <div class="gh-map">
+        <img src="{% static 'images/UAhIr- (2).png' %}"
+             alt="Map of Bologna showing location of the DAMA Technopole">
+      </div>
 
     </div>
-
-
-    <!-- TAB CONTENT: CAR / TAXI -->
-    <div id="tab-car" class="tab-content venue-tab-content">
-
-      <p>
-        🚗 <b>From city centre:</b> approx. 10–15 minutes (EUR 15–20).
-      </p>
-
-      <p>
-        🚕 <b>From Bologna Airport:</b> approx. 20 minutes (EUR 15–20).
-      </p>
-
-      <p>
-        <b>Taxi tip:</b> Mention <strong>“ex Manifattura Tabacchi / Tecnopolo”</strong> to drivers for clarity.<br>
-        💳 Credit cards are widely accepted.
-      </p>
-
-      <p><strong>Parking is available on site.</strong></p>
-
-    </div>
-
 
   </div>
 </section>
+
+
 
 <!-- =========================
      WHERE TO STAY

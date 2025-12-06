@@ -26,5 +26,6 @@ urlpatterns = [
     path('venue/', views.venue, name='venue'),
     path('submissions/', views.submissions, name='submissions'),
     path('register/', views.register, name='register'),
+    path('contact/', views.contact, name='contact'),
     path('admin/', admin.site.urls),
 ]

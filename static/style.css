@@ -969,7 +969,7 @@ a:hover {
 
 .getting-here-layout {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: start;
   margin-top: 1.5rem;
@@ -1080,4 +1080,13 @@ a:hover {
 }
 .hero > div:first-child .cta-row {
   justify-content: center;
+}
+.contact-email {
+  color: #fff !important;               /* fully visible on the crimson gradient */
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.contact-email:hover {
+  color: #ffe2e2 !important;            /* bright, clear hover color */
 }
