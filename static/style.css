@@ -407,6 +407,26 @@ a {
   text-align: left;
 }
 
+/* Force committee to be 3 columns by allowing columns to shrink */
+#committee {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+/* IMPORTANT: allow grid items to shrink inside columns */
+#committee > * {
+  min-width: 0;
+}
+
+/* Mobile single column */
+@media (max-width: 600px) {
+  #committee {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* FOOTER */
 footer {
   border-top: 1px solid color-mix(in oklab, var(--crimson-darkest) 8%, #fff);
