@@ -357,6 +357,14 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
+  justify-content: center;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .speakers-grid > :last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
 }
 
 .committee_member,
@@ -417,6 +425,8 @@ a {
 
 /* IMPORTANT: allow grid items to shrink inside columns */
 #committee > * {
+  grid-column: auto !important;
+  justify-self: stretch;
   min-width: 0;
 }
 

@@ -34,6 +34,31 @@ function renderCommittee() {
   });
 }
 
+/* Dynamically set width of 3rd speaker based on size  */
+function syncOrphanSpeakerWidth() {
+  const speakersSection = document.getElementById('speakers');
+  if (!speakersSection) return; // not on homepage
+
+  const grid = speakersSection.querySelector('.speakers-grid');
+  if (!grid) return;
+
+  const cards = grid.querySelectorAll('.speaker');
+  if (cards.length < 3) return;
+
+  const orphan = cards[cards.length - 1];
+  const isTablet = window.matchMedia('(min-width: 640px) and (max-width: 1023px)').matches;
+
+  if (!isTablet) {
+    orphan.style.maxWidth = '';
+    return;
+  }
+
+  const referenceWidth = cards[0].offsetWidth;
+  if (referenceWidth > 0) {
+    orphan.style.maxWidth = `${referenceWidth}px`;
+  }
+}
+
 /* Modal logic */
 function initModal(modalId, openBtnId, closeBtnId) {
   const modal = document.getElementById(modalId);
@@ -206,4 +231,11 @@ function renderInstitutions() {
 }
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  requestAnimationFrame(() => {
+    requestAnimationFrame(syncOrphanSpeakerWidth);
+  });
+});
+
+window.addEventListener('resize', syncOrphanSpeakerWidth);
 
