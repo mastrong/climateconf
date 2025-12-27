@@ -25,7 +25,9 @@ urlpatterns = [
     # path('collaborators/', views.collaborators, name='collaborators'),
     path('venue/', views.venue, name='venue'),
     path('submissions/', views.submissions, name='submissions'),
-    path('register/', views.register, name='register'),
+    path('terms-conditions/', views.terms_conditions, name='register'),
     path('contact/', views.contact, name='contact'),
+    path('info/', views.info, name='info'),
+    path('privacy/', views.privacy, name='privacy'),
     path('admin/', admin.site.urls),
 ]

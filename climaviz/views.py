@@ -14,8 +14,14 @@ def venue(request):
 def submissions(request):
     return render(request, 'submissions.html')
 
-def register(request):
-    return render(request, 'register.html')
+def terms_conditions(request):
+    return render(request, 'terms_conditions.html')
 
+def info(request):
+    return render(request, 'info.html')
+
+def privacy(request):
+    return render(request, 'privacy.html'
+                  )
 def contact(request):
     return render(request, 'contact.html')
