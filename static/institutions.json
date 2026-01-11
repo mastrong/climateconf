@@ -5,6 +5,10 @@
       {
         "src": "/static/logos/Copernicus-ECMWF/logoline.svg",
         "href": "https://climate.copernicus.eu/"
+      },
+      {
+        "src": "/static/logos/Copernicus-ECMWF/ECMWF-emblem-1st-Dec-border.svg",
+        "href": "https://climate.copernicus.eu/"
       }
     ],
     "text": "Copernicus is the Earth observation component of the European Union’s Space programme, coordinated by the European Commission and implemented with European and national organisations. The European Centre for Medium-Range Weather Forecasts (ECMWF) is both a research institute and a 24/7 operational service, producing global numerical weather predictions and operating a world-class supercomputing facility. ECMWF implements key components of Copernicus, including the Copernicus Climate Change Service and the Copernicus Atmosphere Monitoring Service, and contributes to the Copernicus Emergency Management Service. Along with ESA and EUMETSAT, ECMWF also delivers Destination Earth, developing prototype digital twins of the Earth."

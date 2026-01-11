@@ -139,24 +139,24 @@ function initCommitteeModal() {
   });
 }
 
-/* Localization */
-function localizeSpelling() {
-  const lang = (navigator.language || "en-US").toLowerCase();
-  if (lang === "en-us") return;
-  const map = {
-    visualize:"visualise", visualizes:"visualises", visualized:"visualised",
-    visualizing:"visualising", visualization:"visualisation",
-    visualizations:"visualisations"
-  };
-  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-  while (walker.nextNode()) {
-    let t = walker.currentNode.nodeValue;
-    for (const [us, uk] of Object.entries(map)) {
-      t = t.replace(new RegExp(`\b${us}\b`, "gi"), m => m[0]===m[0].toUpperCase()?uk[0].toUpperCase()+uk.slice(1):uk);
-    }
-    walker.currentNode.nodeValue = t;
-  }
-}
+// /* Localization */
+// function localizeSpelling() {
+//   const lang = (navigator.language || "en-US").toLowerCase();
+//   if (lang === "en-us") return;
+//   const map = {
+//     visualize:"visualise", visualizes:"visualises", visualized:"visualised",
+//     visualizing:"visualising", visualization:"visualisation",
+//     visualizations:"visualisations"
+//   };
+//   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+//   while (walker.nextNode()) {
+//     let t = walker.currentNode.nodeValue;
+//     for (const [us, uk] of Object.entries(map)) {
+//       t = t.replace(new RegExp(`\b${us}\b`, "gi"), m => m[0]===m[0].toUpperCase()?uk[0].toUpperCase()+uk.slice(1):uk);
+//     }
+//     walker.currentNode.nodeValue = t;
+//   }
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
   loadCommittee().then(() => {
