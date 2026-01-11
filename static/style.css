@@ -374,10 +374,20 @@ a {
   border-radius: 16px;
   padding: .9rem;
   box-shadow: var(--soft-shadow);
+}
+
+.committee_member {
   display: grid;
   grid-template-columns: 64px 1fr;
   gap: .8rem 1rem;
   align-items: start;
+}
+
+.speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .committee_member {
@@ -406,13 +416,28 @@ a {
   color: var(--crimson-darkest);
 }
 
+/* Bigger centered avatar */
+.speaker .avatar {
+  width: 144px;        /* 2x the current 64px */
+  height: 144px;
+  margin-bottom: 0.75rem;
+}
+
+.speaker-name {
+  margin: 0;
+}
+
+/* Company stays same font, centered */
+.speaker-org {
+  margin-top: 0.1rem;
+  color: var(--muted);
+}
+
+/* Bio spacing and alignment */
 .speaker-bio {
-  grid-column: 1 / -1;
-  margin-top: .6rem;
-  font-size: .9rem;
-  color: var(--text);
-  line-height: 1.45;
-  text-align: left;
+  margin-top: 1rem;
+  text-align: left;    /* readable paragraphs */
+  width: 100%;
 }
 
 /* Force committee to be 3 columns by allowing columns to shrink */
