@@ -1002,10 +1002,11 @@ a:hover {
     padding-right: 0;
   }
 }
-.two-col {
+
+.submission-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 .col-block {
