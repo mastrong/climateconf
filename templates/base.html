@@ -2,12 +2,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Visualising Climate 2026 — Conference</title>
   <link rel="icon" type="image/png" href="{% static 'logos/vc_logo_static/logo_final@4x.png' %}">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet">
   <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+  />
+
 </head>
 <body>
 
@@ -35,7 +44,7 @@
       <a class="link" href="/venue">Venue</a>
       <a class="link" href="/contact">Contact Us</a>
     </div>
-        <button class="nav-toggle" aria-label="Toggle navigation">
+    <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -43,41 +52,41 @@
 
 {% block content %}{% endblock %}
 <section id="partners" class="section">
-    <div class="container">
+  <div class="container">
     <div class="logo-wrapper">
-  <div class="logo-wide">
-    <a href="https://climate.copernicus.eu/">
-      <img src="{% static 'logos/Copernicus-ECMWF/logoline.svg' %}" alt="Copernicus-ECMWF logo">
-    </a>
-    <a href="https://climate.copernicus.eu/">
-      <img src="{% static 'logos/Copernicus-ECMWF/ECMWF-emblem-1st-Dec-border.svg' %}" alt="Copernicus-ECMWF logo">
-    </a>
-  </div>
+      <div class="logo-wide">
+        <a href="https://climate.copernicus.eu/">
+          <img src="{% static 'logos/Copernicus-ECMWF/logoline.svg' %}" alt="Copernicus-ECMWF logo">
+        </a>
+        <a href="https://climate.copernicus.eu/">
+          <img src="{% static 'logos/Copernicus-ECMWF/ECMWF-emblem-1st-Dec-border.svg' %}" alt="Copernicus-ECMWF logo">
+        </a>
+      </div>
 
-  <div class="logo-row">
-    <a href="https://welcome.miami.edu/">
-      <img src="{% static 'logos/UM/um-horizontal-pms.svg' %}" alt="UM logo">
-    </a>
+      <div class="logo-row">
+        <a href="https://welcome.miami.edu/">
+          <img src="{% static 'logos/UM/um-horizontal-pms.svg' %}" alt="UM logo">
+        </a>
 
-    <a href="https://openvisualizationacademy.org">
-      <img src="{% static 'logos/UM/ova_closeup.svg' %}" alt="OVA logo">
-    </a>
+        <a href="https://openvisualizationacademy.org">
+          <img src="{% static 'logos/UM/ova_closeup.svg' %}" alt="OVA logo">
+        </a>
 
-    <a href="https://www.bc3research.org/">
-      <img src="{% static 'logos/BC3/2.1 BC3 H Color.svg' %}" alt="BC3 logo">
-    </a>
+        <a href="https://www.bc3research.org/">
+          <img src="{% static 'logos/BC3/2.1 BC3 H Color.svg' %}" alt="BC3 logo">
+        </a>
 
-    <a href="https://www.bsc.es/es">
-      <img src="{% static 'logos/BSC/BSC-blue.svg' %}" alt="BSC logo">
-    </a>
+        <a href="https://www.bsc.es/es">
+          <img src="{% static 'logos/BSC/BSC-blue.svg' %}" alt="BSC logo">
+        </a>
 
-    <a href="https://www.csic.es/es">
-      <img src="{% static 'logos/CSIC/1-CSIC-Logotipo--SVG-Vectorial--COLOR--CSIC.svg' %}" alt="CSIC logo">
-    </a>
-  </div>
-</div>
+        <a href="https://www.csic.es/es">
+          <img src="{% static 'logos/CSIC/1-CSIC-Logotipo--SVG-Vectorial--COLOR--CSIC.svg' %}" alt="CSIC logo">
+        </a>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <footer>
   <div class="footer-inner">
@@ -85,6 +94,24 @@
     <div class="footer-contact">
       <strong>Contact us</strong><br>
       <a href="mailto:hello@visualisingclimate.com">hello@visualisingclimate.com</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/company/visualisingclimate/" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.instagram.com/visualisingclimate/" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://bsky.app/profile/visualisingclimate.com" aria-label="Bluesky">
+        <i class="fa-brands fa-bluesky"></i>
+      </a>
+{#      <a href="https://www.facebook.com" aria-label="Facebook">#}
+{#        <i class="fa-brands fa-facebook-f"></i>#}
+{#      </a>#}
+      <a href="https://vis.social/@visualisingclimate" aria-label="Mastodon">
+        <i class="fa-brands fa-mastodon"></i>
+      </a>
     </div>
 
     <div class="copyright">
