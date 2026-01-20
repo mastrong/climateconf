@@ -139,24 +139,80 @@ function initCommitteeModal() {
   });
 }
 
-// /* Localization */
-// function localizeSpelling() {
-//   const lang = (navigator.language || "en-US").toLowerCase();
-//   if (lang === "en-us") return;
-//   const map = {
-//     visualize:"visualise", visualizes:"visualises", visualized:"visualised",
-//     visualizing:"visualising", visualization:"visualisation",
-//     visualizations:"visualisations"
-//   };
-//   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-//   while (walker.nextNode()) {
-//     let t = walker.currentNode.nodeValue;
-//     for (const [us, uk] of Object.entries(map)) {
-//       t = t.replace(new RegExp(`\b${us}\b`, "gi"), m => m[0]===m[0].toUpperCase()?uk[0].toUpperCase()+uk.slice(1):uk);
-//     }
-//     walker.currentNode.nodeValue = t;
-//   }
-// }
+let showingEUR = false;
+let fxRate = null;
+
+async function fetchUsdToEur() {
+  const res = await fetch(
+    "https://api.frankfurter.app/latest?from=USD&to=EUR"
+  );
+
+  if (!res.ok) {
+    throw new Error("FX request failed");
+  }
+
+  const data = await res.json();
+
+  if (!data.rates || !data.rates.EUR) {
+    throw new Error("Invalid FX data");
+  }
+
+  return {
+    rate: data.rates.EUR,
+    date: data.date
+  };
+}
+
+function updatePrices() {
+  document.querySelectorAll(".price").forEach(el => {
+    const usd = parseFloat(el.dataset.usd);
+    const eurSlot = el.nextElementSibling;
+
+    if (!eurSlot || !eurSlot.classList.contains("price-eur")) return;
+
+    if (showingEUR && fxRate) {
+      const eur = (usd * fxRate.rate).toFixed(2);
+      eurSlot.textContent = `€${eur}`;
+    } else {
+      eurSlot.textContent = "";
+    }
+  });
+
+  const meta = document.getElementById("fxMeta");
+  if (!meta) return;
+
+  if (showingEUR && fxRate) {
+    meta.textContent =
+      `EUR shown using ECB reference rate (${fxRate.rate.toFixed(4)}) ` +
+      `as of ${fxRate.date}`;
+  } else {
+    meta.textContent = "";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("toggleCurrency");
+  if (!btn) return;
+
+  btn.addEventListener("click", async () => {
+    if (!fxRate) {
+      try {
+        fxRate = await fetchUsdToEur();
+      } catch (err) {
+        alert("Could not load exchange rate.");
+        return;
+      }
+    }
+
+    showingEUR = !showingEUR;
+    btn.textContent = showingEUR
+      ? "Hide prices in EUR"
+      : "Show prices in EUR";
+
+    updatePrices();
+  });
+});
+
 
 document.addEventListener("DOMContentLoaded", () => {
   loadCommittee().then(() => {
@@ -172,7 +228,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initTabs(".tab-button", ".tab-content");
   initTabs(".venue-tab", ".venue-tab-content");
   initModal("venueModal", "venueModalBtn", "venueModalClose");
-  localizeSpelling();
 });
 
 
