@@ -58,10 +58,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-MIDDLEWARE.insert(
-    MIDDLEWARE.index('django.contrib.sessions.middleware.SessionMiddleware') + 1,
-    "core.middleware.PasswordGateMiddleware"
-)
+# MIDDLEWARE.insert(
+#     MIDDLEWARE.index('django.contrib.sessions.middleware.SessionMiddleware') + 1,
+#     "core.middleware.PasswordGateMiddleware"
+# )
 
 ROOT_URLCONF = 'core.urls'
 
