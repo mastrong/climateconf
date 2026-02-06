@@ -39,6 +39,10 @@
       {
         "src": "/static/logos/BC3/2.1 BC3 H Color.svg",
         "href": "https://www.bc3research.org/"
+      },
+      {
+        "src": "/static/logos/IMAGINEadaptation/IMAGINEadaptation.svg",
+        "href": "https://imagineadapt.bc3research.org/"
       }
     ],
     "text": "The Basque Centre for Climate Change (BC3) is an internationally recognized research centre focused on climate change science, socioeconomic impacts, adaptation, mitigation, and sustainable development. BC3 integrates natural and social sciences to support climate policy, strengthen resilience, and advance evidence-based solutions."
