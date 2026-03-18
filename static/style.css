@@ -1177,3 +1177,13 @@ a:hover {
   color: var(--crimson);
   white-space: nowrap;
 }
+
+#paper_review_criteria {
+  margin-top: 0.75rem;     /* space from paragraph above */
+  padding-left: 1.5rem;    /* controls number indentation */
+}
+
+#paper_review_criteria li {
+  margin-bottom: 0.6rem;   /* spacing between items */
+  line-height: 1.6;
+}
