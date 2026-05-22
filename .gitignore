@@ -7,3 +7,5 @@ staticfiles/
 *.pot
 *.pyc
 __pycache__
+.claude
+/.claude/

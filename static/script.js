@@ -214,6 +214,24 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+let reviewCommittee = [];
+function loadReviewCommittee() {
+  return fetch("/static/review_committee.json")
+    .then(r => r.json())
+    .then(data => { reviewCommittee = data; });
+}
+
+function renderReviewCommittee() {
+  const container = document.getElementById("review-committee");
+  if (!container) return;
+  reviewCommittee.forEach(m => {
+    const el = document.createElement("div");
+    el.className = "review_member";
+    el.innerHTML = `<h4>${m.name}</h4><p>${m.institution}</p>`;
+    container.appendChild(el);
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   loadCommittee().then(() => {
     renderCommittee();
@@ -223,6 +241,8 @@ document.addEventListener("DOMContentLoaded", () => {
   loadInstitutions().then(() => {
     renderInstitutions();
   });
+
+  loadReviewCommittee().then(() => renderReviewCommittee());
 
   initNavbar();
   initTabs(".tab-button", ".tab-content");

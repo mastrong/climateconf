@@ -462,6 +462,40 @@ a {
   }
 }
 
+/* REVIEW COMMITTEE */
+#review-committee-section h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+#review-committee {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem 1.5rem;
+}
+
+.review_member h4 {
+  margin: 0 0 0.1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.review_member p {
+  margin: 0;
+  font-size: 0.78rem;
+  opacity: 0.65;
+}
+
+@media (max-width: 900px) {
+  #review-committee { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 600px) {
+  #review-committee { grid-template-columns: 1fr; }
+}
+
 /* FOOTER */
 footer {
   border-top: 1px solid color-mix(in oklab, var(--crimson-darkest) 8%, #fff);
