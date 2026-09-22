@@ -1,84 +1,109 @@
 [
   {
-    "name": "Copernicus & ECMWF",
-    "logos": [
+    "category": "Funding Institutions",
+    "institutions": [
       {
-        "src": "/static/logos/Copernicus-ECMWF/logoline.svg",
-        "href": "https://climate.copernicus.eu/"
+        "name": "Copernicus & ECMWF",
+        "logos": [
+          {
+            "src": "/static/logos/Copernicus-ECMWF/logoline.svg",
+            "href": "https://climate.copernicus.eu/"
+          },
+          {
+            "src": "/static/logos/Copernicus-ECMWF/ECMWF-emblem-1st-Dec-border.svg",
+            "href": "https://climate.copernicus.eu/"
+          }
+        ],
+        "text": "Copernicus is the Earth observation component of the European Union’s Space programme, coordinated by the European Commission and implemented with European and national organisations. The European Centre for Medium-Range Weather Forecasts (ECMWF) is both a research institute and a 24/7 operational service, producing global numerical weather predictions and operating a world-class supercomputing facility. ECMWF implements key components of Copernicus, including the Copernicus Climate Change Service and the Copernicus Atmosphere Monitoring Service, and contributes to the Copernicus Emergency Management Service. Along with ESA and EUMETSAT, ECMWF also delivers Destination Earth, developing prototype digital twins of the Earth."
       },
       {
-        "src": "/static/logos/Copernicus-ECMWF/ECMWF-emblem-1st-Dec-border.svg",
-        "href": "https://climate.copernicus.eu/"
-      }
-    ],
-    "text": "Copernicus is the Earth observation component of the European Union’s Space programme, coordinated by the European Commission and implemented with European and national organisations. The European Centre for Medium-Range Weather Forecasts (ECMWF) is both a research institute and a 24/7 operational service, producing global numerical weather predictions and operating a world-class supercomputing facility. ECMWF implements key components of Copernicus, including the Copernicus Climate Change Service and the Copernicus Atmosphere Monitoring Service, and contributes to the Copernicus Emergency Management Service. Along with ESA and EUMETSAT, ECMWF also delivers Destination Earth, developing prototype digital twins of the Earth."
-  },
-  {
-    "name": "University of Miami – IDSC & School of Communication",
-    "logos": [
-      {
-        "src": "/static/logos/UM/um-horizontal-pms.svg",
-        "href": "https://welcome.miami.edu/"
-      }
-    ],
-    "text": "As part of the University of Miami’s Frost Institutes of Science and Engineering, the Frost Institute for Data Science and Computing (IDSC) supports basic and applied research across the University and with leading institutions worldwide. IDSC builds partnerships with industry, government, and nonprofit organizations, fostering connections across South Florida, the Caribbean, Latin America, and beyond. <br><br>The University of Miami School of Communication prepares students to become forward-thinking, analytical, and ethical communication professionals. Its programs integrate theory and practice, emphasizing creativity, collaboration, critical thinking, and freedom of expression, guiding future scholars, practitioners, and leaders toward a lifetime of informed engagement."
-  },
-  {
-    "name": "Barcelona Supercomputing Center (BSC)",
-    "logos": [
-      {
-        "src": "/static/logos/BSC/BSC-blue.svg",
-        "href": "https://www.bsc.es/es"
-      }
-    ],
-    "text": "The Barcelona Supercomputing Center (BSC) is Spain’s national supercomputing facility and a leading research centre in high-performance computing. BSC supports scientific and engineering research across Europe, hosts the MareNostrum supercomputers, and advances innovation in climate modelling, computational science, and digital technologies."
-  },
-  {
-    "name": "Basque Centre for Climate Change (BC3)",
-    "logos": [
-      {
-        "src": "/static/logos/BC3/2.1 BC3 H Color.svg",
-        "href": "https://www.bc3research.org/"
+        "name": "University of Miami – IDSC & School of Communication",
+        "logos": [
+          {
+            "src": "/static/logos/UM/um-horizontal-pms.svg",
+            "href": "https://welcome.miami.edu/"
+          }
+        ],
+        "text": "As part of the University of Miami’s Frost Institutes of Science and Engineering, the Frost Institute for Data Science and Computing (IDSC) supports basic and applied research across the University and with leading institutions worldwide. IDSC builds partnerships with industry, government, and nonprofit organizations, fostering connections across South Florida, the Caribbean, Latin America, and beyond. <br><br>The University of Miami School of Communication prepares students to become forward-thinking, analytical, and ethical communication professionals. Its programs integrate theory and practice, emphasizing creativity, collaboration, critical thinking, and freedom of expression, guiding future scholars, practitioners, and leaders toward a lifetime of informed engagement."
       },
       {
-        "src": "/static/logos/IMAGINEadaptation/IMAGINEadaptation.svg",
-        "href": "https://imagineadapt.bc3research.org/"
-      }
-    ],
-    "text": "The Basque Centre for Climate Change (BC3) is an internationally recognized research centre focused on climate change science, socioeconomic impacts, adaptation, mitigation, and sustainable development. BC3 integrates natural and social sciences to support climate policy, strengthen resilience, and advance evidence-based solutions."
-  },
-  {
-    "name": "CSIC – Spanish National Research Council",
-    "logos": [
-      {
-        "src": "/static/logos/CSIC/1-CSIC-Logotipo--SVG-Vectorial--COLOR--CSIC.svg",
-        "href": "https://www.csic.es/es"
+        "name": "Barcelona Supercomputing Center (BSC)",
+        "logos": [
+          {
+            "src": "/static/logos/BSC/BSC-blue.svg",
+            "href": "https://www.bsc.es/es"
+          }
+        ],
+        "text": "The Barcelona Supercomputing Center (BSC) is Spain’s national supercomputing facility and a leading research centre in high-performance computing. BSC supports scientific and engineering research across Europe, hosts the MareNostrum supercomputers, and advances innovation in climate modelling, computational science, and digital technologies."
       },
       {
-        "src": "/static/logos/CSIC/MBG.svg",
-        "href": "https://mbg.csic.es/en/the-mision-biologica-de-galicia/"
+        "name": "Basque Centre for Climate Change (BC3)",
+        "logos": [
+          {
+            "src": "/static/logos/BC3/2.1 BC3 H Color.svg",
+            "href": "https://www.bc3research.org/"
+          },
+          {
+            "src": "/static/logos/IMAGINEadaptation/IMAGINEadaptation.svg",
+            "href": "https://imagineadapt.bc3research.org/"
+          }
+        ],
+        "text": "The Basque Centre for Climate Change (BC3) is an internationally recognized research centre focused on climate change science, socioeconomic impacts, adaptation, mitigation, and sustainable development. BC3 integrates natural and social sciences to support climate policy, strengthen resilience, and advance evidence-based solutions."
+      },
+      {
+        "name": "CSIC – Spanish National Research Council",
+        "logos": [
+          {
+            "src": "/static/logos/CSIC/1-CSIC-Logotipo--SVG-Vectorial--COLOR--CSIC.svg",
+            "href": "https://www.csic.es/es"
+          },
+          {
+            "src": "/static/logos/CSIC/MBG.svg",
+            "href": "https://mbg.csic.es/en/the-mision-biologica-de-galicia/"
+          }
+        ],
+        "text": "The Spanish National Research Council (CSIC) is Spain’s largest public research organization, conducting basic and applied research across all fields of knowledge. Its mission is to promote, coordinate, and disseminate multidisciplinary scientific and technological research that strengthens knowledge, supports economic and social development, trains researchers, and provides expert guidance to public and private institutions. With 121 institutes across Spain and major national research centres, CSIC addresses global challenges including ecological transition, resource management, public health, digitalization, social inclusion, and democratic quality, driving scientific excellence and innovation.<br><h3>MBG-CSIC</h3>The Misión Biológica de Galicia is a leading research center in northwestern Spain dedicated to advancing knowledge in agricultural, forestry, environmental, and atmospheric sciences. Its mission combines the optimization of plant production—through the study and genetic improvement of key crops such as maize, legumes, brassicas, grapevine, olive, and forest species like pine and oak—with the development of strategies to address major global challenges, including crop adaptation to climate change, pest resistance, sustainable landscape management, wildfire prevention, soil protection, and the conservation of plant genetic resources. This holistic approach integrates research on bioclimatology and global change, exploring the interactions between atmospheric conditions and ecosystems, and applying physical geography to understand atmospheric variables and their spatio-temporal dynamics. The center also promotes interdisciplinary and transdisciplinary work in landscape ecology, fire science, and biodiversity conservation, serving as a bridge between science, policy, and practice to design nature-based solutions for sustainable land management. Guided by a forward-looking vision, the Misión Biológica de Galicia strives to deliver innovative solutions that ensure food security, environmental sustainability, and societal well-being for future generations."
       }
-    ],
-    "text": "The Spanish National Research Council (CSIC) is Spain’s largest public research organization, conducting basic and applied research across all fields of knowledge. Its mission is to promote, coordinate, and disseminate multidisciplinary scientific and technological research that strengthens knowledge, supports economic and social development, trains researchers, and provides expert guidance to public and private institutions. With 121 institutes across Spain and major national research centres, CSIC addresses global challenges including ecological transition, resource management, public health, digitalization, social inclusion, and democratic quality, driving scientific excellence and innovation.<br><h3>MBG-CSIC</h3>The Misión Biológica de Galicia is a leading research center in northwestern Spain dedicated to advancing knowledge in agricultural, forestry, environmental, and atmospheric sciences. Its mission combines the optimization of plant production—through the study and genetic improvement of key crops such as maize, legumes, brassicas, grapevine, olive, and forest species like pine and oak—with the development of strategies to address major global challenges, including crop adaptation to climate change, pest resistance, sustainable landscape management, wildfire prevention, soil protection, and the conservation of plant genetic resources. This holistic approach integrates research on bioclimatology and global change, exploring the interactions between atmospheric conditions and ecosystems, and applying physical geography to understand atmospheric variables and their spatio-temporal dynamics. The center also promotes interdisciplinary and transdisciplinary work in landscape ecology, fire science, and biodiversity conservation, serving as a bridge between science, policy, and practice to design nature-based solutions for sustainable land management. Guided by a forward-looking vision, the Misión Biológica de Galicia strives to deliver innovative solutions that ensure food security, environmental sustainability, and societal well-being for future generations."
+    ]
   },
   {
-    "name": "University of Twente Climate Centre",
-    "logos": [
+    "category": "Supporting Institutions",
+    "institutions": [
       {
-        "src": "/static/logos/UTwente/UT Climate Centre Logo.png",
-        "href": "https://www.utwente.nl/en/climate-centre/"
+        "name": "University of Twente Climate Centre",
+        "logos": [
+          {
+            "src": "/static/logos/UTwente/UT Climate Centre Logo.png",
+            "href": "https://www.utwente.nl/en/climate-centre/"
+          }
+        ],
+        "text": "The UT Climate Centre at the University of Twente in the Netherlands supports research, education, and innovation toward a resilient, low-carbon society. The Centre fosters collaboration among staff, students, industry, and government, promoting transdisciplinary solutions to the climate crisis. Key areas of expertise include the energy transition, resilience to weather extremes, and the societal dimensions of climate-related transitions."
+      },
+      {
+        "name": "InfoDesignLab",
+        "logos": [
+          {
+            "src": "/static/logos/IDL/IDL_logo.svg",
+            "href": "https://infodesignlab.com/"
+          }
+        ],
+        "text": "InfoDesignLab is a socially conscious information design studio specializing in transforming complex data into clear visualisations, meaningful narratives, and compelling messages. For nearly two decades, the studio has worked with scientific organizations, universities, NGOs, and international institutions to make complex knowledge accessible. With a strong focus on climate science, sustainable development, health, education, and social justice, InfoDesignLab applies participatory design and evidence-based communication to support understanding, trust, and informed decision-making."
       }
-    ],
-    "text": "The UT Climate Centre at the University of Twente in the Netherlands supports research, education, and innovation toward a resilient, low-carbon society. The Centre fosters collaboration among staff, students, industry, and government, promoting transdisciplinary solutions to the climate crisis. Key areas of expertise include the energy transition, resilience to weather extremes, and the societal dimensions of climate-related transitions."
+    ]
   },
   {
-    "name": "InfoDesignLab",
-    "logos": [
+    "category": "Sponsors",
+    "institutions": [
       {
-        "src": "/static/logos/IDL/IDL_logo.svg",
-        "href": "https://infodesignlab.com/"
+        "name": "CMCC - Climate Insight for Global Impact",
+        "logos": [
+          {
+            "src": "/static/logos/CMCC/CMCC_logo_cropped.png",
+            "href": "https://www.cmcc.it/about/the-cmcc-foundation"
+          }
+        ],
+        "text": "The CMCC Foundation – Euro-Mediterranean Center on Climate Change (CMCC) is an international, independent research center that provides state-of-the-art climate science for adaptation and mitigation strategies. Through a multidisciplinary approach that integrates climate modeling, Earth system science, economics, social sciences and impact analysis, CMCC delivers the knowledge, data and analyses that policymakers, businesses and communities need to make science-based decisions on climate change – from the global to the local scale."
       }
-    ],
-    "text": "InfoDesignLab is a socially conscious information design studio specializing in transforming complex data into clear visualisations, meaningful narratives, and compelling messages. For nearly two decades, the studio has worked with scientific organizations, universities, NGOs, and international institutions to make complex knowledge accessible. With a strong focus on climate science, sustainable development, health, education, and social justice, InfoDesignLab applies participatory design and evidence-based communication to support understanding, trust, and informed decision-making."
+    ]
   }
 ]

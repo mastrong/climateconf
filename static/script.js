@@ -238,10 +238,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initCommitteeModal();
   });
 
-  loadInstitutions().then(() => {
-    renderInstitutions();
-  });
-
   loadReviewCommittee().then(() => renderReviewCommittee());
 
   initNavbar();
@@ -265,46 +261,6 @@ document.addEventListener('click', () => {
     menu.style.display = 'none';
   });
 });
-
-let institutions = [];
-
-function loadInstitutions() {
-  return fetch("/static/institutions.json")
-    .then(r => r.json())
-    .then(data => { institutions = data; });
-}
-
-function renderInstitutions() {
-  const container = document.getElementById("institutionsList");
-  if (!container) return;
-
-  institutions.forEach(inst => {
-    const el = document.createElement("div");
-    el.className = "institution-full";
-
-    // Ensure logos is always an array
-    const logos = Array.isArray(inst.logos) ? inst.logos : [];
-
-    const logosHTML = `
-      <div class="institution-multi-logos">
-        ${logos.map(l => `
-          <a href="${l.href || '#'}" target="_blank" rel="noopener noreferrer">
-            <div class="institution-logo" style="background-image:url('${l.src}')"></div>
-          </a>
-        `).join("")}
-      </div>
-    `;
-
-    el.innerHTML = `
-      ${logosHTML}
-      <h3>${inst.name}</h3>
-      <p>${inst.text}</p>
-    `;
-
-    container.appendChild(el);
-  });
-}
-
 
 document.addEventListener('DOMContentLoaded', () => {
   requestAnimationFrame(() => {

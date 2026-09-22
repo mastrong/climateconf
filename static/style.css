@@ -992,6 +992,18 @@ a:hover {
   background-repeat: no-repeat;
   border-radius: 12px;
 }
+.institution-category {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.15rem, 2.2vw, 1.4rem);
+  color: var(--crimson-darkest);
+  text-align: center;
+  margin: 3rem 0 1.25rem;
+}
+
+.institution-category:first-child {
+  margin-top: 0;
+}
+
 .institution-full {
   background: #fff;
   border: 1px solid color-mix(in oklab, var(--crimson-darkest) 10%, #fff);
