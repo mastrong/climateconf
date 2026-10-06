@@ -27,6 +27,7 @@ urlpatterns = [
     path('submissions/', views.submissions, name='submissions'),
     path('terms-conditions/', views.terms_conditions, name='terms_conditions'),
     path('contact/', views.contact, name='contact'),
+    path('program/', views.program, name='program'),
     path('info/', views.info, name='info'),
     path('privacy/', views.privacy, name='privacy'),
     path('preview_abstract_book', views.preview_abstract_book, name='preview_abstract_book'),

@@ -28,6 +28,9 @@ def privacy(request):
 def contact(request):
     return render(request, 'contact.html')
 
+def program(request):
+    return render(request, 'program.html')
+
 def preview_abstract_book(request):
     # Standalone site: served as-is, with <base> so its relative links resolve to static files
     path = os.path.join(settings.BASE_DIR, 'static', 'site-html', 'index.html')
