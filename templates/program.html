@@ -2,4 +2,26 @@
 
 {% block content %}
 {% include "program_content.html" %}
+
+{# Keep the program's sticky day tabs below the site's sticky nav #}
+<style>
+  #vc-program .days{ top:calc(var(--nav-h, 64px) + env(safe-area-inset-top, 0px)) }
+  /* Deep links (#s38) land below both sticky bars */
+  #vc-program [id]{ scroll-margin-top:calc(var(--nav-h, 64px) + var(--days-h, 64px) + 12px) }
+</style>
+<script>
+(function(){
+  const nav = document.querySelector(".nav");
+  if(!nav) return;
+  const days = document.querySelector("#vc-program .days");
+  const set = () => {
+    const root = document.documentElement.style;
+    root.setProperty("--nav-h", nav.offsetHeight + "px");
+    if(days) root.setProperty("--days-h", days.offsetHeight + "px");
+  };
+  set();
+  window.addEventListener("resize", set);
+  window.addEventListener("load", set);
+})();
+</script>
 {% endblock %}
