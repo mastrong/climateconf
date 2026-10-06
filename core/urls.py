@@ -29,5 +29,7 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('info/', views.info, name='info'),
     path('privacy/', views.privacy, name='privacy'),
+    path('preview_abstract_book', views.preview_abstract_book, name='preview_abstract_book'),
+    path('preview_abstract_book/', views.preview_abstract_book),
     path('admin/', admin.site.urls),
 ]

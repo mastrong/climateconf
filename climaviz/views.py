@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.conf import settings
+from django.http import HttpResponse
 import os
 
 
@@ -25,3 +27,11 @@ def privacy(request):
                   )
 def contact(request):
     return render(request, 'contact.html')
+
+def preview_abstract_book(request):
+    # Standalone site: served as-is, with <base> so its relative links resolve to static files
+    path = os.path.join(settings.BASE_DIR, 'static', 'site-html', 'index.html')
+    with open(path, encoding='utf-8') as f:
+        html = f.read()
+    html = html.replace('<head>', '<head>\n<base href="/static/site-html/">', 1)
+    return HttpResponse(html)
