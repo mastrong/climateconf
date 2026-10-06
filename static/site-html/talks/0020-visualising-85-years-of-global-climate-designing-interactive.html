@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visualising 85 Years of Global Climate: Designing Interactive Web Applications for ERA5 Reanalysis Data · Visualising Climate 2026</title>
+<link rel="icon" href="../images/logo.png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="vc-page-talks">
+<header class="vc-navbar">
+  <a class="vc-navbar-brand" href="../index.html">
+    <img src="../images/logo.png" alt="Visualising Climate logo">
+    <span class="vc-navbar-wordmark">Visualising<br>Climate<br>2026</span>
+  </a>
+  <div class="vc-navbar-right">
+    <div class="vc-search" id="vc-search-wrap" data-root="../">
+      <input type="text" id="vc-search-input" data-root="../" autocomplete="off" placeholder="Search talks, papers, workshops...">
+      <button id="vc-search-btn" aria-label="Search">&#128269;</button>
+      <div class="vc-search-results" id="vc-search-results"></div>
+    </div>
+    <button class="vc-hamburger" id="vc-menu-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="vc-menu-overlay" id="vc-menu-overlay">
+  <div class="vc-menu-left">
+    <a href="../index.html" class="vc-menu-brand">
+      <img src="../images/logo.png" alt="">
+      <span>Visualising<br>Climate<br>2026</span>
+    </a>
+  </div>
+  <div class="vc-menu-right">
+    <button class="vc-menu-close" id="vc-menu-close" aria-label="Close menu">&times;</button>
+    <nav class="vc-menu-nav">
+      <div class="vc-menu-item"><a href="../about.html">About</a></div>
+      <div class="vc-menu-item"><a href="../keynotes/index.html">Keynotes</a></div>
+      <div class="vc-menu-item active">
+        <a href="../talks/index.html">Talks</a>
+        <div class="vc-submenu">
+          <a href="../talks/index.html#art">Art</a>
+          <a href="../talks/index.html#media">Media</a>
+          <a href="../talks/index.html#science">Science</a>
+        </div>
+      </div>
+      <div class="vc-menu-item"><a href="../workshops/index.html">Workshops</a></div>
+      <div class="vc-menu-item"><a href="../papers/index.html">Papers</a></div>
+      <div class="vc-menu-item"><a href="../organizers.html">Organizers</a></div>
+    </nav>
+    <div class="vc-menu-search" id="vc-menu-search-wrap" data-root="../">
+      <input type="text" id="vc-menu-search-input" data-root="../" autocomplete="off" placeholder="Search...">
+      <span>&#128269;</span>
+      <div class="vc-search-results vc-menu-search-results" id="vc-menu-search-results"></div>
+    </div>
+  </div>
+</div>
+<main>
+<div class="vc-detail-page">
+  <div class="vc-meta-col">
+    <div class="vc-eyebrow">Talks · Science</div>
+    <h1 class="vc-detail-title"><span class="vc-detail-num">#31</span> Visualising 85 Years of Global Climate: Designing Interactive Web Applications for ERA5 Reanalysis Data</h1>
+    <div class="vc-authors-block"><strong>Author(s):</strong> Matthew Menary, Chiara Cagnazzo, James Varndell</div>
+    <div class="vc-bio-block">
+      <h3>Speaker Biographies</h3>
+      <p class="vc-bio-name"><strong>Matthew Menary</strong></p>
+<p>Scientific web application design and development at ECMWF. I have a background in climate science, big data, and native app development for iOS. Previously I worked at Sorbonne Université and as a senior scientist at the Met Office Hadley Centre.</p>
+    </div>
+    
+  </div>
+  <div class="vc-body-col">
+    <p>The ERA5 reanalysis, produced by ECMWF for the Copernicus Climate Change Service, provides hourly global climate data from 1940 to near real time: an extraordinarily rich and complex dataset. We present three interactive web applications - ERA Explorer, Thermal Trace, and Weather Replay - developed as part of the Horizon Europe ASPECT project to make this data visually engaging and accessible to journalists, educators, policymakers, and the public.</p>
+<p>Each application addresses a distinct use case while sharing core design principles: mobile-first responsive layouts, interactive global maps, location-based time series charts, and gamified onboarding that guides users from simple exploration to deeper analysis. ERA Explorer enables comparison of climatological averages across the globe, featuring warming stripes and threshold analysis. Thermal Trace visualises decades of heat and cold stress through the Universal Thermal Climate Index (UTCI), supporting public health monitoring. Weather Replay streams hourly atmospheric fields with animated map sequences and multi-level variable exploration, to reconstruct historical weather events.</p>
+<p>A key technical challenge was delivering responsive interactivity over a multi-terabyte archive. We adopted an Analysis-Ready Cloud-Optimised (ARCO) approach using Zarr storage, enabling on-the-fly computation from 80+ years of hourly data within seconds. Weather Replay takes this further with a front-end-only architecture, offloading rendering and animation to the user's device, achieving near-infinite scalability without backend computation. Spatial and temporal subsampling strategies balance performance with scientific fidelity across all three applications.</p>
+<p>We discuss the visualisation design decisions, technical trade-offs, and lessons learned in translating reanalysis data into intuitive visual experiences.</p>
+    <nav class="vc-pagenav">
+    <a class="vc-pagenav-link vc-pagenav-prev" href="../talks/0038-using-data-visualisations-as-a-co-creation-tool-to-chart-cli.html">
+      <span class="vc-pagenav-arrow">←</span>
+      <span class="vc-pagenav-text"><span class="vc-pagenav-label">Previous</span><span class="vc-pagenav-title">#30 Using data visualisations as a co-creation tool to chart climate-resilient pathways with farmers in Kenya</span></span>
+    </a>
+    <a class="vc-pagenav-back" href="../talks/index.html">All Talks</a>
+    <a class="vc-pagenav-link vc-pagenav-next" href="../talks/0067-visualising-climate-change-for-the-public-insights-from-mete.html">
+      <span class="vc-pagenav-text"><span class="vc-pagenav-label">Next</span><span class="vc-pagenav-title">#32 Visualising Climate Change for the public: Insights from MeteoSwiss</span></span>
+      <span class="vc-pagenav-arrow">→</span>
+    </a>
+  </nav>
+  </div>
+</div>
+</main>
+<footer class="vc-footer">Visualising Climate 2026 · Bologna, Italy · <a href="https://visualisingclimate.com">visualisingclimate.com</a></footer>
+<script src="../js/search-data.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

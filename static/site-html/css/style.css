@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+  --maroon-dark:#3e1421;
+  --burgundy:#791128;
+  --navy:#1f376c;
+  --gold:#fcc465;
+  --cream:#fbf4e6;
+  --ink:#1a1a1a;
+  --gray:#555;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  color:var(--ink);
+  background:#ffffff;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+  font-family:'Lora',Georgia,serif;
+  font-weight:700;
+  color:var(--burgundy);
+  margin:0 0 .5em 0;
+}
+a{color:var(--burgundy); text-decoration:none;}
+a:hover{color:var(--gold);}
+img{max-width:100%; display:block;}
+p{line-height:1.65; margin:0 0 1.1em 0;}
+
+/* ---------- Navbar ---------- */
+.vc-navbar{
+  display:flex; align-items:center; justify-content:space-between;
+  background:var(--maroon-dark);
+  padding:18px 40px;
+}
+.vc-navbar-brand{display:flex; align-items:center; gap:14px;}
+.vc-navbar-brand img{width:52px; height:52px;}
+.vc-navbar-wordmark{
+  font-family:'Lora',Georgia,serif; font-weight:700; color:#fff;
+  font-size:.95rem; line-height:1.25;
+}
+.vc-navbar-right{display:flex; align-items:center; gap:24px;}
+.vc-search{
+  position:relative;
+  display:flex; align-items:center; background:rgba(255,255,255,.08);
+  border-radius:4px; padding:8px 14px; min-width:320px;
+}
+.vc-search input{
+  background:transparent; border:none; outline:none; color:#fff;
+  font-family:'Inter',sans-serif; font-size:.9rem; flex:1;
+}
+.vc-search input::placeholder{color:rgba(255,255,255,.55);}
+.vc-search button{background:none; border:none; color:rgba(255,255,255,.75); cursor:pointer; font-size:1rem;}
+.vc-hamburger{
+  display:flex; flex-direction:column; justify-content:center; gap:5px;
+  width:30px; height:24px; background:none; border:none; cursor:pointer; padding:0;
+}
+.vc-hamburger span{display:block; width:100%; height:2px; background:#fff;}
+
+/* ---------- Menu overlay ---------- */
+.vc-menu-overlay{
+  position:fixed; inset:0; display:none; z-index:100;
+}
+.vc-menu-overlay.open{display:flex;}
+.vc-menu-left{flex:0 0 45%; background:var(--burgundy); padding:40px;}
+.vc-menu-right{flex:1; background:var(--maroon-dark); position:relative; padding:60px 100px; display:flex; flex-direction:column; justify-content:center;}
+.vc-menu-brand{display:flex; align-items:center; gap:14px;}
+.vc-menu-brand img{width:56px; height:56px;}
+.vc-menu-brand span{font-family:'Lora',Georgia,serif; font-weight:700; color:#fff; line-height:1.25;}
+.vc-menu-close{
+  position:absolute; top:36px; right:48px; background:none; border:none;
+  color:#fff; font-size:2rem; cursor:pointer; line-height:1;
+}
+.vc-menu-nav{display:flex; flex-direction:column; gap:40px;}
+.vc-menu-item a{
+  font-family:'Lora',Georgia,serif; font-weight:700; font-size:3rem; color:#fff;
+  border-bottom:4px solid var(--burgundy); padding-bottom:6px; display:inline-block;
+}
+.vc-menu-item a:hover{color:var(--gold);}
+.vc-menu-item.active a{color:var(--gold);}
+.vc-menu-item .vc-submenu{
+  display:none; flex-direction:column; gap:10px; margin-top:14px; margin-left:6px;
+}
+.vc-menu-item.active .vc-submenu, .vc-menu-item:hover .vc-submenu{display:flex;}
+.vc-submenu a{
+  font-family:'Lora',Georgia,serif; font-weight:500; font-size:1.4rem; color:#fff; border:none; padding:0;
+}
+.vc-submenu a:hover{color:var(--gold);}
+.vc-menu-search{
+  position:absolute; bottom:40px; right:48px; display:flex; align-items:center; gap:8px;
+}
+.vc-menu-search input{
+  background:transparent; border:none; border-bottom:1px solid rgba(255,255,255,.3);
+  color:#fff; outline:none; font-family:'Inter',sans-serif; width:220px; transition:border-color .2s; padding:4px;
+}
+.vc-menu-search input:focus{border-color:var(--gold);}
+.vc-menu-search span{color:rgba(255,255,255,.7);}
+.vc-menu-search .vc-search-results{ left:auto; right:0; bottom:calc(100% + 10px); top:auto; }
+
+/* ---------- Home hero ---------- */
+html, body.vc-page-home{ height:100%; margin:0; }
+body.vc-page-home{ background:var(--maroon-dark); }
+body.vc-page-home main{ min-height:100vh; display:flex; }
+.vc-hero{
+  min-height:100vh;
+  width:100%;
+  background:var(--maroon-dark);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; padding:60px 20px;
+}
+.vc-hero img{width:150px; margin-bottom:28px;}
+.vc-hero-title{
+  font-family:'Lora',Georgia,serif; font-weight:700; color:#fff;
+  font-size:2.8rem; line-height:1.15;
+}
+.vc-pill{
+  display:inline-block; margin-top:34px; background:#fff; color:var(--maroon-dark);
+  font-family:'Inter',sans-serif; font-weight:600; padding:.8rem 1.8rem; border-radius:3px;
+}
+.vc-pill:hover{background:var(--gold); color:var(--maroon-dark);}
+
+/* ---------- About ---------- */
+.vc-about-page{display:flex; min-height:calc(100vh - 96px);}
+.vc-about-photo{flex:0 0 45%; overflow:hidden;}
+.vc-about-photo img{width:100%; height:100%; object-fit:cover;}
+.vc-about-text{flex:1; background:var(--maroon-dark); color:#fff; padding:70px 80px;}
+.vc-about-text h1{color:#fff; font-size:3rem; line-height:1.1; margin-bottom:.6em;}
+.vc-about-text p{color:rgba(255,255,255,.92);}
+.vc-about-text .vc-eyebrow{color:var(--gold);}
+
+/* ---------- Generic inner page (Organizers) ---------- */
+.vc-inner-page{max-width:980px; margin:0 auto; padding:70px 40px;}
+.vc-inner-page h1{font-size:2.6rem; margin-bottom:.5em;}
+.vc-org-grid{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:30px; margin:40px 0;
+}
+.vc-org-card{
+  display:flex; align-items:center; justify-content:center;
+  border:1px solid #eee; border-radius:6px; padding:24px; background:#fafafa;
+}
+.vc-org-card img{max-height:70px; width:auto; margin:0 auto;}
+.vc-org-note{color:var(--gray); font-size:.92rem;}
+
+/* ---------- Eyebrow ---------- */
+.vc-eyebrow{
+  color:var(--navy); font-family:'Lora',Georgia,serif; font-weight:700;
+  font-size:1.4rem; margin-bottom:.3em;
+}
+
+/* ---------- Listing pages ---------- */
+.vc-listing-page{max-width:1400px; margin:0 auto; padding:50px 50px 90px;}
+.vc-listing-page > h1{font-size:3rem; margin-bottom:.6em;}
+.vc-listing-grid{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:50px; align-items:start;
+}
+.vc-listing-grid-single{grid-template-columns:1fr; max-width:760px;}
+.vc-listing-col h2{
+  font-size:1.7rem; border-bottom:2px solid var(--gold); padding-bottom:8px; margin-bottom:1em;
+}
+ol.vc-listing{list-style:none; counter-reset:vc-item; margin:0; padding:0;}
+ol.vc-listing li{
+  counter-increment:vc-item; position:relative; padding-left:2.1rem; margin-bottom:1.3rem;
+}
+ol.vc-listing li::before{
+  content:counter(vc-item) "."; position:absolute; left:0; top:0;
+  color:var(--navy); font-weight:700; font-family:'Inter',sans-serif;
+}
+ol.vc-listing li a{font-weight:600; color:var(--ink);}
+ol.vc-listing li a:hover{color:var(--burgundy);}
+.vc-authors{color:var(--gray); font-size:.92rem;}
+
+/* ---------- Detail pages ---------- */
+.vc-detail-page{
+  display:flex; gap:0; max-width:1500px; margin:0 auto; min-height:calc(100vh - 96px);
+}
+.vc-meta-col{
+  flex:0 0 40%; padding:55px 55px; border-right:1px solid #ddd;
+}
+.vc-body-col{flex:1; padding:55px 60px;}
+.vc-detail-title{font-size:2rem; line-height:1.25; margin-bottom:.6em;}
+.vc-detail-num{color:var(--burgundy);}
+.vc-authors-block{margin-bottom:1.6em; font-size:.98rem;}
+.vc-bio-block h3{
+  font-family:'Inter',sans-serif; font-weight:600; color:var(--ink); font-size:1rem;
+  text-transform:uppercase; letter-spacing:.04em; margin-bottom:1em; margin-top:2em;
+}
+.vc-bio-block p{font-size:.95rem;}
+p.vc-bio-name{font-weight:700; color:var(--ink); margin-bottom:.2em;}
+.vc-body-col p{font-size:1.02rem;}
+.vc-download-btn{
+  display:inline-flex; align-items:center; gap:8px; margin-top:1.6em;
+  background:var(--maroon-dark); color:#fff; padding:.7rem 1.5rem; border-radius:30px;
+  font-family:'Inter',sans-serif; font-weight:600; font-size:.9rem;
+}
+.vc-download-btn:hover{background:var(--burgundy); color:#fff;}
+
+/* ---------- Footer ---------- */
+.vc-footer{
+  text-align:center; padding:30px; color:var(--gray); font-size:.85rem;
+  border-top:1px solid #eee;
+}
+.vc-footer a{color:var(--gray); text-decoration:underline;}
+
+/* ---------- Responsive ---------- */
+@media (max-width:900px){
+  .vc-navbar{padding:14px 18px;}
+  .vc-search{min-width:0; flex:1; margin-right:12px;}
+  .vc-menu-overlay.open{flex-direction:column;}
+  .vc-menu-left{flex:0 0 120px;}
+  .vc-menu-right{padding:40px 24px;}
+  .vc-menu-item a{font-size:2rem;}
+  .vc-about-page{flex-direction:column;}
+  .vc-about-photo{flex:0 0 240px;}
+  .vc-about-text{padding:40px 24px;}
+  .vc-listing-grid{grid-template-columns:1fr;}
+  .vc-detail-page{flex-direction:column;}
+  .vc-meta-col{border-right:none; border-bottom:1px solid #ddd;}
+  .vc-org-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+/* ---------- Home floating hamburger (no navbar on cover) ---------- */
+.vc-hamburger-floating{
+  position:fixed; top:34px; right:40px; z-index:10;
+  display:flex; flex-direction:column; justify-content:center; gap:5px;
+  width:30px; height:24px; background:none; border:none; cursor:pointer; padding:0;
+}
+.vc-hamburger-floating span{display:block; width:100%; height:2px; background:#fff;}
+
+
+/* ---------- Search results dropdown ---------- */
+.vc-search-results{
+  display:none; position:absolute; top:calc(100% + 8px); left:0; right:0;
+  background:#fff; border-radius:6px; box-shadow:0 12px 30px rgba(0,0,0,.25);
+  max-height:420px; overflow-y:auto; z-index:50; text-align:left;
+}
+.vc-search-results.open{display:block;}
+.vc-search-result{
+  display:flex; flex-direction:column; gap:2px; padding:12px 16px;
+  border-bottom:1px solid #f0f0f0; color:var(--ink);
+}
+.vc-search-result:last-child{border-bottom:none;}
+.vc-search-result:hover{background:var(--cream);}
+.vc-search-result-title{font-family:'Lora',Georgia,serif; font-weight:700; color:var(--burgundy); font-size:.95rem;}
+.vc-search-result-meta{font-size:.8rem; color:var(--gray);}
+.vc-search-empty{padding:14px 16px; color:var(--gray); font-size:.9rem;}
+
+/* ---------- About: organizing committee ---------- */
+.vc-about-subhead{
+  color:#fff; font-size:1.3rem; margin-top:2em; margin-bottom:.8em;
+  border-top:1px solid rgba(255,255,255,.2); padding-top:1.6em;
+}
+.vc-committee-grid{
+  display:grid; grid-template-columns:repeat(2,1fr); gap:1.4em 2em;
+}
+.vc-committee-name{ font-family:'Lora',Georgia,serif; font-weight:700; color:#fff; font-size:1rem; }
+.vc-committee-affil{ color:rgba(255,255,255,.7); font-size:.88rem; margin-top:.15em; }
+@media (max-width:900px){
+  .vc-committee-grid{ grid-template-columns:1fr; }
+}
+
+/* ---------- Detail page prev/next navigation ---------- */
+.vc-pagenav{
+  display:flex; align-items:stretch; justify-content:space-between; gap:16px;
+  margin-top:3em; padding-top:1.6em; border-top:1px solid #e5e5e5;
+}
+.vc-pagenav-link{
+  flex:1 1 0; display:flex; align-items:center; gap:12px; text-decoration:none;
+  padding:10px 4px; min-width:0;
+}
+.vc-pagenav-empty{ flex:1 1 0; }
+.vc-pagenav-next{ justify-content:flex-end; text-align:right; }
+.vc-pagenav-arrow{ font-size:1.3rem; color:var(--burgundy); flex:0 0 auto; }
+.vc-pagenav-link:hover .vc-pagenav-arrow{ color:var(--gold); }
+.vc-pagenav-text{ display:flex; flex-direction:column; min-width:0; }
+.vc-pagenav-label{
+  font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; color:var(--gray);
+}
+.vc-pagenav-title{
+  font-family:'Lora',Georgia,serif; font-weight:700; color:var(--ink); font-size:.9rem;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:220px;
+}
+.vc-pagenav-link:hover .vc-pagenav-title{ color:var(--burgundy); }
+.vc-pagenav-back{
+  flex:0 0 auto; align-self:center; font-family:'Inter',sans-serif; font-weight:600;
+  font-size:.82rem; color:var(--navy); border:1px solid #ddd; border-radius:20px;
+  padding:8px 16px; white-space:nowrap;
+}
+.vc-pagenav-back:hover{ background:var(--navy); color:#fff; border-color:var(--navy); }
+@media (max-width:700px){
+  .vc-pagenav{ flex-direction:column; align-items:stretch; }
+  .vc-pagenav-next{ justify-content:flex-start; text-align:left; }
+  .vc-pagenav-title{ max-width:none; white-space:normal; }
+  .vc-pagenav-back{ align-self:center; }
+}
