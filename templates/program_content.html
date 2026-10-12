@@ -273,7 +273,7 @@ function paperBlock(intro, papers, dayStream){
     </div>`}).join("");
   return `<div class="card${live?" live":""}" id="${k}" data-stream="${dayStream}">
     <div class="meta">${live?`<span class="nowpill">Now</span>`:""}<span class="t">Paper session</span><span>${papers.length} papers</span></div>
-    <div class="title" style="cursor:default">Short paper presentations</div>
+    <div class="title" style="cursor:default">Paper presentations</div>
     ${intro?`<div class="who">Introduced by <b>Larissa Naylor</b></div>`:""}
     <div class="papers">${items}</div>
   </div>`;
