@@ -257,6 +257,10 @@ a {
   box-shadow: var(--ring);
 }
 
+a.btn { display: inline-flex; align-items: center; gap: .5rem; }
+a.btn-primary:hover { color: #fff; }
+a.btn-outline:hover { color: var(--crimson); }
+
 .cta-row {
   display: flex;
   gap: .75rem;

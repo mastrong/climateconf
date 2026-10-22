@@ -31,7 +31,7 @@ def contact(request):
 def program(request):
     return render(request, 'program.html')
 
-def preview_abstract_book(request):
+def abstract_book(request):
     # Standalone site: served as-is, with <base> so its relative links resolve to static files
     path = os.path.join(settings.BASE_DIR, 'static', 'site-html', 'index.html')
     with open(path, encoding='utf-8') as f:

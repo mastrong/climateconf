@@ -294,3 +294,19 @@ p.vc-bio-name{font-weight:700; color:var(--ink); margin-bottom:.2em;}
   .vc-pagenav-title{ max-width:none; white-space:normal; }
   .vc-pagenav-back{ align-self:center; }
 }
+
+/* ---------- 7-item menu: tighter spacing, scroll if viewport is short ---------- */
+.vc-menu-right{ overflow-y:auto; }
+.vc-menu-nav{ gap:22px; }
+.vc-menu-item a{ font-size:2.6rem; }
+
+/* ---------- Round table sponsor logo ---------- */
+.vc-sponsor{ margin-top:1.6em; }
+.vc-sponsor-label{ display:block; font-size:.78rem; text-transform:uppercase; letter-spacing:.05em; color:var(--gray); margin-bottom:.6em; }
+.vc-sponsor img{ width:190px; max-width:100%; }
+
+.vc-photo{width:150px;height:150px;object-fit:cover;border-radius:50%;display:block;margin:0 0 1.2rem;}
+
+.vc-doi{margin-top:18px;font-size:.85rem;color:rgba(255,255,255,.75);}
+.vc-doi a{color:var(--gold);text-decoration:none;}
+.vc-doi a:hover{text-decoration:underline;}

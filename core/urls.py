@@ -32,7 +32,6 @@ urlpatterns = [
     path('program/', RedirectView.as_view(pattern_name='programme', permanent=False)),
     path('info/', views.info, name='info'),
     path('privacy/', views.privacy, name='privacy'),
-    path('preview_abstract_book', views.preview_abstract_book, name='preview_abstract_book'),
-    path('preview_abstract_book/', views.preview_abstract_book),
+    path('abstract_book', views.abstract_book, name='preview_abstract_book'),
     path('admin/', admin.site.urls),
 ]

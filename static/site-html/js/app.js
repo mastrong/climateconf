@@ -98,12 +98,3 @@ document.addEventListener('DOMContentLoaded', function () {
     else if (input) input.focus();
   });
 });
-
-// When embedded in the main site's iframe, links back to the main site should
-// replace the whole page rather than load inside the frame.
-document.addEventListener('DOMContentLoaded', function () {
-  if (window.self === window.top) return;
-  document.querySelectorAll('a[href^="https://visualisingclimate.com"]').forEach(function (a) {
-    a.target = '_top';
-  });
-});
