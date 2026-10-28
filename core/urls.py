@@ -15,23 +15,43 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 from django.views.generic import RedirectView
 from climaviz import views
 from core.views import pw_gate
-urlpatterns = [
-    path("pw/", pw_gate, name="pw_gate"),
-    path('', views.index, name='index'),
+
+def moved(name):
+    """Old top-level 2026 page -> its new home under /archive/2026/."""
+    return RedirectView.as_view(pattern_name=name, permanent=False)
+
+
+archive_2026 = [
+    path('', views.archive_2026_index, name='archive_2026'),
     path('institutions/', views.institutions, name='about'),
-    # path('collaborators/', views.collaborators, name='collaborators'),
     path('venue/', views.venue, name='venue'),
     path('submissions/', views.submissions, name='submissions'),
     path('terms-conditions/', views.terms_conditions, name='terms_conditions'),
     path('contact/', views.contact, name='contact'),
     path('programme/', views.program, name='programme'),
-    path('program/', RedirectView.as_view(pattern_name='programme', permanent=False)),
     path('info/', views.info, name='info'),
     path('privacy/', views.privacy, name='privacy'),
     path('abstract_book', views.abstract_book, name='preview_abstract_book'),
+]
+
+urlpatterns = [
+    path("pw/", pw_gate, name="pw_gate"),
+    path('', views.index, name='index'),
+    path('archive/2026/', include(archive_2026)),
+    # 2026 pages used to live at the top level
+    path('institutions/', moved('about')),
+    path('venue/', moved('venue')),
+    path('submissions/', moved('submissions')),
+    path('terms-conditions/', moved('terms_conditions')),
+    path('contact/', RedirectView.as_view(url='/#contact', permanent=False)),
+    path('programme/', moved('programme')),
+    path('program/', moved('programme')),
+    path('info/', moved('info')),
+    path('privacy/', moved('privacy')),
+    path('abstract_book', moved('preview_abstract_book')),
     path('admin/', admin.site.urls),
 ]

@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Visualising Climate 2026 — Conference</title>
+  <title>Visualising Climate 2027 — Conference</title>
     <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Visualising Climate 2026">
-  <meta property="og:title" content="Visualising Climate 2026 — Conference">
+  <meta property="og:site_name" content="Visualising Climate 2027">
+  <meta property="og:title" content="Visualising Climate 2027 — Conference">
   <meta property="og:description"
-        content="The first global conference dedicated to how data visualisation can transform public understanding of climate change and support informed decision-making.">
+        content="The global conference on climate data visualisation comes to Mexico City.">
   <meta property="og:url" content="https://visualisingclimate.com/">
   <meta property="og:image" content="https://visualisingclimate.com/static/logos/OG1.png">
   <meta property="og:image:width" content="1200">
@@ -18,9 +18,9 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Visualising Climate 2026 — Conference">
+  <meta name="twitter:title" content="Visualising Climate 2027 — Conference">
   <meta name="twitter:description"
-        content="A global conference on climate data visualization, storytelling, and science. Bologna, Italy • 4–6 November 2026.">
+        content="A global conference on climate data visualization, storytelling, and science. Mexico City, Mexico • 18–20 October 2027.">
   <meta name="twitter:image" content="https://visualisingclimate.com/static/logos/OG1.png">
 
   <link rel="icon" type="image/png" href="{% static 'logos/vc_logo_static/logo_final@4x.png' %}">
@@ -43,28 +43,13 @@
 
     <a class="brand" href="/">
       <div id="vcLogoHeader" class="vc-logo"></div>
-      <span class="brand-title">Visualising Climate 2026</span>
+      <span class="brand-title">Visualising Climate 2027</span>
     </a>
     <div class="spacer"></div>
     <div class="nav-links">
-      <div class="nav-dropdown">
-        <button class="dropdown-toggle">About</button>
-        <div class="dropdown-menu">
-          <a href="/institutions">Participating Institutions</a>
-          {% comment %}
-          {# TODO: when enabled, use href="/preview_abstract_book" target="_blank" #}
-          <a style="color: gray">Abstract Book (coming soon)</a>
-          {% endcomment %}
-          <a href="/info">General Information</a>
-          <a href="/terms-conditions">Terms and Conditions</a>
-          <a href="/privacy">Privacy Policy</a>
-        </div>
-      </div>
-{#      <a class="link" href="#">Register</a>#}
-      <a class="link" href="/programme">Programme</a>
-      <a class="link" href="/submissions">Submissions</a>
-      <a class="link" href="/venue">Venue</a>
-      <a class="link" href="/contact">Contact</a>
+      <a class="link" href="/#about">About</a>
+      <a class="link" href="/#organizers">Organising Committee</a>
+      <a class="link" href="/#contact">Contact</a>
     </div>
     <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
@@ -110,7 +95,7 @@
   </div>
 </section>
 
-<footer>
+<footer id="contact">
   <div class="footer-inner">
 
     <div class="footer-contact">
@@ -136,8 +121,10 @@
       </a>
     </div>
 
+    <a class="past-link" href="{% url 'archive_2026' %}">Visualising Climate 2026 &middot; Bologna &rarr;</a>
+
     <div class="copyright">
-      © 2026 Visualising Climate
+      © 2027 Visualising Climate
     </div>
 
   </div>
