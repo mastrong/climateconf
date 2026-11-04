@@ -671,6 +671,20 @@ footer {
   transition: opacity .2s ease, filter .2s ease;
 }
 
+/* Hosts row: fixed logo height, since the host logos have different aspect ratios */
+.logo-row-hosts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 0.5rem;
+}
+.logo-row-hosts img {
+  height: 60px;
+  width: auto;
+  max-width: 100%;
+}
+
 .logo-row img:hover {
   opacity: 1;
   filter: grayscale(0%);
@@ -1268,6 +1282,10 @@ a:hover {
   margin: 1.4rem auto 0;
   font-weight: 700;
   font-size: 1.05rem;
+}
+
+.hero p.announce.announce-hosts {
+  margin-top: 0.4rem;
 }
 
 .hero p.lede {

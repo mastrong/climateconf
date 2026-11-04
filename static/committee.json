@@ -52,5 +52,19 @@
     "institution": "University of Twente",
     "photo": "/static/images/Yuri_Engelhardt.jpg",
     "bio": "Yuri is Assistant Professor of Information Visualization and Transdisciplinary Climate Action. He wrote ‘The Language of Graphics’ (2002), and has contributed to various other books and academic publications, including the book ‘Elements of Diagramming’ (expected in 2026, edited by Clive Richards). After 20 years at the University of Amsterdam, where he co-founded the annual interfaculty ‘Show me the Data’ course and symposium, Yuri moved to the University of Twente (also in the Netherlands). After 10 years in the research group for Cartography and Visualisation in Twente, he currently works at the university's Climate Centre. Yuri enjoys exploring the many different ‘languages of visualisation’ and their ‘building blocks’. He is passionate about visual communication that is related to sustainability, biodiversity, and health, and he loves bringing people together across disciplines to take action regarding the climate emergency."
+  },
+  {
+    "name": "Dr. Nora Morales Zaragoza",
+    "institution": "UAM Cuajimalpa",
+    "photo": "/static/images/nora_morales.png",
+    "bio": "Nora Morales Zaragoza holds a PhD in Social Sciences and Humanities and is an information designer and academic at Universidad Autónoma Metropolitana UAM Cuajimalpa, where she coordinates the Master’s program in Design, Information, and Communication (MADIC). Her research integrates information visualization, participatory mapping, and speculative design to explore territories and envision futures. Her work connects design, social, and collective participation, translating complex information into visual tools that foster dialogue and help communities shape shared futures.",
+    "bio_es": "Nora Morales es doctora en Ciencias Sociales y Humanidades, diseñadora de información y académica de la UAM Cuajimalpa, donde coordina la Maestría en Diseño, Información y Comunicación (MADIC). Su investigación integra visualización de información, cartografía participativa y diseño especulativo para explorar el territorio y anticipar futuros. Su trabajo vincula diseño, ciencias sociales y participación colectiva, transformando información compleja en herramientas visuales que facilitan el diálogo y la construcción de futuros compartidos."
+  },
+  {
+    "name": "Roberto Holguín",
+    "institution": "Universidad Iberoamericana",
+    "photo": "/static/images/roberto_holguin.jpg",
+    "bio": "Roberto Holguín is director of the Department of Design at Universidad Iberoamericana in Mexico City. A graduate of the Institute of Design at the Illinois Institute of Technology, he co-founded INSITUM in 2002, a pioneering design research and strategy firm in Latin America that completed more than 2,000 projects for clients in Mexico, the United States, and Europe before joining Accenture in 2019. He is an enthusiast of maker culture and makerspaces, and enjoys woodworking in his spare time.",
+    "bio_es": "Roberto Holguín es director del Departamento de Diseño de la Universidad Iberoamericana Ciudad de México. Egresado del Institute of Design del Illinois Institute of Technology, en 2002 cofundó INSITUM, firma pionera en investigación y estrategia de diseño en América Latina, que desarrolló más de 2,000 proyectos para clientes de México, Estados Unidos y Europa y se integró a Accenture en 2019. Es entusiasta de la cultura maker y los makerspaces, y en su tiempo libre disfruta del trabajo artesanal en madera."
   }
 ]
