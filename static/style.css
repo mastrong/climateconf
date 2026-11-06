@@ -1324,18 +1324,20 @@ a:hover {
   box-shadow: 0 0 0 4px rgba(253,184,65,.3);
 }
 
-/* FOOTER: link to the previous edition */
+/* Link to the previous edition (under "About the Conference") */
 .past-link {
-  margin: 0 0 .9rem;
+  display: table;          /* shrink-wraps and centers via auto margins */
+  margin: 0 auto 1.5rem;
   padding: 8px 16px;
-  border: 1px solid color-mix(in oklab, var(--crimson-darkest) 18%, #fff);
+  border: 1px solid rgba(255,255,255,.55);
   border-radius: 999px;
-  color: var(--crimson-dark);
+  color: #fff;
   font-weight: 700;
   font-size: .9rem;
   transition: background .15s ease;
 }
 
 .past-link:hover {
-  background: color-mix(in oklab, var(--crimson-darkest) 8%, #fff);
+  background: rgba(255,255,255,.15);
+  border-color: #fdb841;
 }
