@@ -66,5 +66,11 @@
     "photo": "/static/images/roberto_holguin.jpg",
     "bio": "Roberto Holguín is director of the Department of Design at Universidad Iberoamericana in Mexico City. A graduate of the Institute of Design at the Illinois Institute of Technology, he co-founded INSITUM in 2002, a pioneering design research and strategy firm in Latin America that completed more than 2,000 projects for clients in Mexico, the United States, and Europe before joining Accenture in 2019. He is an enthusiast of maker culture and makerspaces, and enjoys woodworking in his spare time.",
     "bio_es": "Roberto Holguín es director del Departamento de Diseño de la Universidad Iberoamericana Ciudad de México. Egresado del Institute of Design del Illinois Institute of Technology, en 2002 cofundó INSITUM, firma pionera en investigación y estrategia de diseño en América Latina, que desarrolló más de 2,000 proyectos para clientes de México, Estados Unidos y Europa y se integró a Accenture en 2019. Es entusiasta de la cultura maker y los makerspaces, y en su tiempo libre disfruta del trabajo artesanal en madera."
+  },
+  {
+    "name": "César Audelo",
+    "institution": "Universidad Iberoamericana",
+    "photo": "/static/images/cesar_audelo.png",
+    "bio": "César Audelo is a faculty member in the Department of Design at Universidad Iberoamericana. Throughout his professional career, he has worked with and advised national companies and international organizations on experience design, service design, strategic design, and marketing. Since 2002, he has also implemented social projects in vulnerable communities. He has been a member of the International AIDS Society, where he contributed to the organization of the international AIDS 2008 and IAS 2019 conferences in Mexico City. He studied Advertising Design and Production and holds postgraduate degrees in Strategic Design and Innovation and in Marketing Management."
   }
 ]
