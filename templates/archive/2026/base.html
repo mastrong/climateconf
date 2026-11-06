@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Visualising Climate 2026 — Conference</title>
+    <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Visualising Climate 2026">
+  <meta property="og:title" content="Visualising Climate 2026 — Conference">
+  <meta property="og:description"
+        content="The first global conference dedicated to how data visualisation can transform public understanding of climate change and support informed decision-making.">
+  <meta property="og:url" content="https://visualisingclimate.com/">
+  <meta property="og:image" content="https://visualisingclimate.com/static/logos/OG1.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Visualising Climate 2026 — Conference">
+  <meta name="twitter:description"
+        content="A global conference on climate data visualization, storytelling, and science. Bologna, Italy • 4–6 November 2026.">
+  <meta name="twitter:image" content="https://visualisingclimate.com/static/logos/OG1.png">
+
+  <link rel="icon" type="image/png" href="{% static 'logos/vc_logo_static/logo_final@4x.png' %}">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'archive/2026/style.css' %}">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+  />
+
+</head>
+<body>
+
+<div style="background:#3e1421;color:#fff;text-align:center;font-size:.85rem;padding:.4rem 1rem;">
+  Archive: Visualising Climate 2026 (Bologna). <a href="/" style="color:#fdb841;font-weight:700;">Go to the current conference site &rarr;</a>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+
+    <a class="brand" href="/archive/2026/">
+      <div id="vcLogoHeader" class="vc-logo"></div>
+      <span class="brand-title">Visualising Climate 2026</span>
+    </a>
+    <div class="spacer"></div>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <button class="dropdown-toggle">About</button>
+        <div class="dropdown-menu">
+          <a href="/archive/2026/institutions/">Participating Institutions</a>
+          {% comment %}
+          {# TODO: when enabled, use href="/preview_abstract_book" target="_blank" #}
+          <a style="color: gray">Abstract Book (coming soon)</a>
+          {% endcomment %}
+          <a href="/archive/2026/info/">General Information</a>
+          <a href="/archive/2026/terms-conditions/">Terms and Conditions</a>
+          <a href="/archive/2026/privacy/">Privacy Policy</a>
+        </div>
+      </div>
+{#      <a class="link" href="#">Register</a>#}
+      <a class="link" href="/archive/2026/programme/">Programme</a>
+      <a class="link" href="/archive/2026/submissions/">Submissions</a>
+      <a class="link" href="/archive/2026/venue/">Venue</a>
+      <a class="link" href="/archive/2026/contact/">Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+{% block content %}{% endblock %}
+<section id="partners" class="section">
+  <div class="container">
+    <div class="logo-wrapper">
+      <div class="logo-wide">
+        <a href="https://climate.copernicus.eu/">
+          <img src="{% static 'logos/Copernicus-ECMWF/logoline.svg' %}" alt="Copernicus-ECMWF logo">
+        </a>
+        <a href="https://climate.copernicus.eu/">
+          <img src="{% static 'logos/Copernicus-ECMWF/ECMWF-emblem-1st-Dec-border.svg' %}" alt="Copernicus-ECMWF logo">
+        </a>
+      </div>
+
+      <div class="logo-row">
+        <a href="https://welcome.miami.edu/">
+          <img src="{% static 'logos/UM/um-horizontal-pms.svg' %}" alt="UM logo">
+        </a>
+
+        <a href="https://openvisualizationacademy.org">
+          <img src="{% static 'logos/UM/ova_closeup.svg' %}" alt="OVA logo">
+        </a>
+
+        <a href="https://www.bc3research.org/">
+          <img src="{% static 'logos/BC3/2.1 BC3 H Color.svg' %}" alt="BC3 logo">
+        </a>
+
+        <a href="https://www.bsc.es/es">
+          <img src="{% static 'logos/BSC/BSC-blue.svg' %}" alt="BSC logo">
+        </a>
+
+        <a href="https://www.csic.es/es">
+          <img src="{% static 'logos/CSIC/1-CSIC-Logotipo--SVG-Vectorial--COLOR--CSIC.svg' %}" alt="CSIC logo">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-contact">
+      <strong>Contact us</strong><br>
+      <a href="mailto:hello@visualisingclimate.com">hello@visualisingclimate.com</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/company/visualisingclimate/" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.instagram.com/visualising.climate/" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://bsky.app/profile/visualisingclimate.com" target="_blank" aria-label="Bluesky">
+        <i class="fa-brands fa-bluesky"></i>
+      </a>
+      <a href="https://www.facebook.com/visualisingclimate" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://vis.social/@visualisingclimate" target="_blank" aria-label="Mastodon">
+        <i class="fa-brands fa-mastodon"></i>
+      </a>
+    </div>
+
+    <div class="copyright">
+      © 2026 Visualising Climate
+    </div>
+
+  </div>
+</footer>
+
+
+<div id="bioModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="bioContent"></div>
+  </div>
+</div>
+
+<script src="{% static 'archive/2026/script.js' %}"></script>
+{% block extra_js %}{% endblock %}
+</body>
+</html>

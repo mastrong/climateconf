@@ -297,7 +297,7 @@ a.btn-outline:hover { color: var(--crimson); }
 }
 
 .about {
-  background: linear-gradient(180deg, var(--crimson), var(--crimson-dark));
+  background: linear-gradient(160deg, var(--crimson) 0%, var(--crimson-dark) 55%, var(--crimson-darkest) 100%);
   color: #fff;
   box-shadow: var(--soft-shadow);
 }
@@ -319,9 +319,7 @@ a.btn-outline:hover { color: var(--crimson); }
 }
 
 .about .container {
-  border-radius: 18px;
-  padding: 1.4rem 1.4rem 1rem;
-  box-shadow: var(--soft-shadow);
+  padding: 0;
 }
 
 /* TRACKS / THEMES */
@@ -671,6 +669,26 @@ footer {
   object-fit: contain;    /* optional to control vertical size */
   opacity: .85;
   transition: opacity .2s ease, filter .2s ease;
+}
+
+/* Hosts row: fixed logo height, since the host logos have different aspect ratios */
+.logo-row-hosts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: clamp(0.75rem, 5vw, 3rem);
+  margin-top: 0.5rem;
+}
+.logo-row-hosts a {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+.logo-row-hosts img {
+  height: clamp(28px, 9vw, 60px);  /* scales with viewport on mobile */
+  width: auto;
+  max-width: 100%;
+  max-height: none;
 }
 
 .logo-row img:hover {
@@ -1045,6 +1063,9 @@ a:hover {
   .logo-row img {
     max-height: 40px;
   }
+  .logo-row-hosts img {
+    max-height: none;
+  }
 }
 @media (max-width: 600px) {
   #partners.section {
@@ -1236,4 +1257,85 @@ a:hover {
 #paper_review_criteria li {
   margin-bottom: 0.6rem;   /* spacing between items */
   line-height: 1.6;
+}
+
+
+
+
+#about { padding: 72px 16px 80px; }
+#about .container > div { max-width: 66ch; margin: 0 auto; }
+
+#about p.desc { color: rgba(255,255,255,.86); font-size: 1.0625rem; line-height: 1.7; margin: 0 0 1.1em; }
+
+#about p.desc:first-of-type {
+  color: #fff; font-size: 1.375rem; line-height: 1.45;
+  text-align: center; margin-bottom: 1.4em;
+}
+
+#about p.desc:last-of-type {
+  color: #fff; margin-top: 1.6em; padding: 20px 24px;
+  border-left: 4px solid #fdb841; border-radius: 0 8px 8px 0;
+  background: rgba(62,20,33,.35); /* --crimson-darkest */
+}
+#about p.desc strong:nth-of-type(1) { color: #fdb841; } /* see */
+#about p.desc strong:nth-of-type(2) { color: #96cfee; } /* imagine */
+
+@media (max-width: 520px) {
+  #about { padding: 56px 16px; }
+  #about p.desc:first-of-type { font-size: 1.2rem; }
+  #about p.desc:last-of-type { padding: 16px 18px; }
+}
+
+/* HERO (2027) */
+.announce {
+  margin: 1.4rem auto 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.hero p.announce.announce-hosts {
+  margin-top: 0.4rem;
+}
+
+.hero p.lede {
+  margin: 1.1rem auto 0;
+}
+
+.reg-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1.4rem;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #fff3d6;
+  color: #6b4300;
+  font-weight: 700;
+  font-size: .92rem;
+  border: 1px solid #f6d58a;
+}
+
+.reg-badge::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fdb841;
+  box-shadow: 0 0 0 4px rgba(253,184,65,.3);
+}
+
+/* FOOTER: link to the previous edition */
+.past-link {
+  margin: 0 0 .9rem;
+  padding: 8px 16px;
+  border: 1px solid color-mix(in oklab, var(--crimson-darkest) 18%, #fff);
+  border-radius: 999px;
+  color: var(--crimson-dark);
+  font-weight: 700;
+  font-size: .9rem;
+  transition: background .15s ease;
+}
+
+.past-link:hover {
+  background: color-mix(in oklab, var(--crimson-darkest) 8%, #fff);
 }

@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "archive/2026/base.html" %}
 {% load static %}
 
 {% block content %}
@@ -86,7 +86,7 @@
             <h3>Instructions for online registration</h3>
             <ul>
               <li>
-                Please ensure you have read and understood the <a href="/terms_conditions">Conference Terms and Conditions</a>, including but not limited to the cancellation policy and registration conditions provided on this website.
+                Please ensure you have read and understood the <a href="{% url 'terms_conditions' %}">Conference Terms and Conditions</a>, including but not limited to the cancellation policy and registration conditions provided on this website.
               </li>
               <li>
                 All information should be entered using upper and lower case letters (e.g., Jane Smith).
