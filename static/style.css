@@ -676,13 +676,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  flex-wrap: nowrap;
+  gap: clamp(0.75rem, 5vw, 3rem);
   margin-top: 0.5rem;
 }
+.logo-row-hosts a {
+  flex: 0 1 auto;
+  min-width: 0;
+}
 .logo-row-hosts img {
-  height: 60px;
+  height: clamp(28px, 9vw, 60px);  /* scales with viewport on mobile */
   width: auto;
   max-width: 100%;
+  max-height: none;
 }
 
 .logo-row img:hover {
@@ -1056,6 +1062,9 @@ a:hover {
 @media (max-width: 480px) {
   .logo-row img {
     max-height: 40px;
+  }
+  .logo-row-hosts img {
+    max-height: none;
   }
 }
 @media (max-width: 600px) {
